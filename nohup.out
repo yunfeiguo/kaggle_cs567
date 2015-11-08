@@ -1,0 +1,285 @@
+  File "./first_submission.py", line 9
+    from scikit-learn import linear_model
+               ^
+SyntaxError: invalid syntax
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+Traceback (most recent call last):
+  File "./first_submission.py", line 44, in <module>
+    print(y[featureCombo]*xModel.coef_,y['Expected'])
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1914, in __getitem__
+    return self._getitem_column(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1921, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py", line 1090, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3102, in get
+    loc = self.items.get_loc(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/index.py", line 1692, in get_loc
+    return self._engine.get_loc(_values_from_object(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:3979)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3843)
+  File "pandas/hashtable.pyx", line 668, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12265)
+  File "pandas/hashtable.pyx", line 676, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12216)
+KeyError: 'Expected'
+Traceback (most recent call last):
+  File "./first_submission.py", line 18, in <module>
+    trainData=pd.read_csv(fn_train,sep=',',index_col='Id')
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 491, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 268, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 583, in __init__
+    self._make_engine(self.engine)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 724, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 1093, in __init__
+    self._reader = _parser.TextReader(src, **kwds)
+  File "pandas/parser.pyx", line 350, in pandas.parser.TextReader.__cinit__ (pandas/parser.c:3253)
+  File "pandas/parser.pyx", line 588, in pandas.parser.TextReader._setup_parser_source (pandas/parser.c:6112)
+IOError: File ../data/train.100000.csv does not exist
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+(       radardist_km
+Id                 
+9543       3.417735
+9544       4.177231
+9549       4.177231
+9550       4.936728
+9551       0.759497
+9552       5.316476
+9554       4.177231
+9556       4.177231
+9559       2.278490
+9560       5.316476
+9564       3.417735
+9566       4.177231
+9570       1.898741
+9574       3.037986
+9577       3.417735
+9580       6.835469
+9582       3.797483
+9585       0.759497
+9588       1.518993
+9589       4.177231
+9590       4.177231
+9592       6.075973
+9593       3.797483
+9594       3.037986
+9597       4.556979
+9602       1.518993
+9603       1.139245
+9604       5.696224
+9606       0.759497
+9607       3.037986
+...             ...
+17680      6.075973
+17682      5.316476
+17685      3.797483
+17687      7.215217
+17689      3.417735
+17690      6.075973
+17694      5.696224
+17697      4.556979
+17698      6.455721
+17699      5.696224
+17700      1.518993
+17701      4.177231
+17702      4.556979
+17704      6.075973
+17705      3.417735
+17706      2.278490
+17707      2.658238
+17708      2.278490
+17709      4.177231
+17712      2.658238
+17714      3.417735
+17715      4.556979
+17716      1.898741
+17717      6.455721
+17719      4.936728
+17720      3.797483
+17721      5.316476
+17722      3.417735
+17724      2.658238
+17725      4.936728
+
+[5514 rows x 1 columns], Id
+9543      1.524001
+9544      1.270001
+9549      0.762000
+9550      2.540001
+9551      0.508000
+9552      2.500001
+9554      0.254000
+9556      3.302002
+9559      8.128004
+9560      1.016000
+9564      4.826003
+9566      1.524001
+9570      3.810002
+9574      0.254000
+9577      1.016001
+9580      9.652005
+9582      0.254000
+9585     10.414006
+9588      0.508000
+9589      0.254000
+9590      0.762000
+9592      1.524001
+9593      2.286001
+9594      4.064002
+9597      0.254000
+9602      0.254000
+9603      0.254000
+9604      0.254000
+9606      3.556002
+9607      0.020000
+           ...    
+17680    42.825024
+17682     1.270001
+17685     0.254000
+17687     2.540001
+17689     0.508000
+17690     0.254000
+17694     7.366004
+17697     4.318002
+17698     2.540001
+17699     4.826003
+17700     1.270001
+17701     0.030000
+17702     2.032001
+17704     2.540001
+17705     1.778001
+17706     0.254000
+17707     0.254000
+17708     4.572002
+17709     2.794001
+17712     0.762000
+17714     0.762000
+17715     0.508000
+17716     4.572002
+17717    10.075006
+17719     0.254000
+17720    35.306020
+17721     5.842003
+17722    10.668006
+17724     3.048001
+17725     1.016000
+Name: Expected, dtype: float64)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+       radardist_km
+Id                 
+1         11.621610
+3         15.979714
+4         13.074312
+6         18.885117
+7         13.074312
+8         21.790520
+10        15.979714
+11        11.621610
+13        17.432416
+14        13.074312
+18        10.168909
+19        20.337818
+22        17.432416
+23         5.810805
+27        13.074312
+30        10.168909
+32        18.885117
+36        14.527013
+39        14.527013
+40         7.263507
+42        15.979714
+47        17.432416
+51        11.621610
+53         8.716208
+57         2.905403
+59        14.527013
+60        23.243221
+61        21.790520
+62        17.432416
+64        17.432416
+...             ...
+89093     15.979714
+89095     20.337818
+89097     14.527013
+89099     14.527013
+89100      8.716208
+89102     11.621610
+89103      0.000000
+89104     15.979714
+89105     18.885117
+89107      8.716208
+89108     18.885117
+89110      2.905403
+89111     13.074312
+89112     20.337818
+89114     17.432416
+89117     18.885117
+89120     17.432416
+89122      7.263507
+89123      8.716208
+89129     24.695922
+89131      1.452701
+89134     15.979714
+89135      7.263507
+89136     23.243221
+89138     15.979714
+89141     17.432416
+89142      8.716208
+89145     14.527013
+89146     13.074312
+89148      5.810805
+
+[50130 rows x 1 columns]
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-07 08:47:59,508 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-07 08:53:41,825 preprocessing done
+2015-11-07 08:53:43,545 start modeling
+2015-11-07 09:51:49,063 started
+2015-11-07 09:52:28,052 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-07 09:58:08,526 preprocessing done
+2015-11-07 09:58:10,219 start modeling
+2015-11-07 09:58:10,928 Prediction done
+2015-11-07 09:58:10,928 Gzipping...
+gzip: ../results/2nd_submission.csv.gz already exists;	not overwritten
+2015-11-07 09:58:11,064 Output written to ../results/2nd_submission.csv.gz
+2015-11-07 10:21:04,139 started
+2015-11-07 10:21:44,126 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-07 10:27:23,282 preprocessing done
+2015-11-07 10:27:25,011 start modeling
+2015-11-07 10:27:25,064 features: ['radardist_km', 'Kdp']
+2015-11-07 10:27:25,065 coef: [ 1.67222718 -0.        ]
+2015-11-07 10:27:25,778 Prediction done
+2015-11-07 10:27:25,778 Gzipping...
+2015-11-07 10:27:26,321 Output written to ../results/2nd_submission.csv.gz

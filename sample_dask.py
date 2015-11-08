@@ -14,9 +14,9 @@ import numpy as np
 import sys
 
 # change the location of the downloaded test file as necessary.
-infile="../data/smalltest.csv"
+infile="../data/test.csv"
 #infile="kaggle/sample.csv"
-outfile="smalltest_solution.csv"
+outfile="../results/test_sample_solution.csv"
 
 # read file
 alldata = dd.read_csv(infile)
