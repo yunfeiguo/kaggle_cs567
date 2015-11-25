@@ -1,0 +1,33 @@
+2015-11-24 19:17:43,254 started
+2015-11-24 19:18:13,097 reading done
+2015-11-24 19:25:27,202 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 19:36:36,460 try feature ['Zdr', 'radardist_km']
+2015-11-24 19:36:36,479 try alpha = 0.001
+2015-11-24 19:36:36,489 try alpha = 0.1
+2015-11-24 19:36:36,501 try alpha = 0.5
+2015-11-24 19:36:36,516 try alpha = 1
+2015-11-24 19:36:36,530 try alpha = 2
+2015-11-24 19:36:36,542 try alpha = 4
+2015-11-24 19:36:36,558 try alpha = 8
+2015-11-24 19:36:36,573 try alpha = 12
+2015-11-24 19:37:26,580 coef: [ 0. -0.]
+2015-11-24 19:37:26,587 average 50-fold MAE for alpha 4 feature ['Zdr', 'radardist_km']: 20.209332214 
+2015-11-24 19:37:27,518 coef: [ 0. -0.]
+2015-11-24 19:37:27,518 average 50-fold MAE for alpha 8 feature ['Zdr', 'radardist_km']: 20.209332214 
+2015-11-24 19:37:28,139 coef: [ 0. -0.]
+2015-11-24 19:37:28,139 average 50-fold MAE for alpha 12 feature ['Zdr', 'radardist_km']: 20.209332214 
+2015-11-24 19:37:28,331 coef: [ 0.02047723 -0.        ]
+2015-11-24 19:37:28,331 average 50-fold MAE for alpha 0.5 feature ['Zdr', 'radardist_km']: 20.2013739849 
+2015-11-24 19:37:28,355 coef: [ 0.04481599 -0.        ]
+2015-11-24 19:37:28,355 average 50-fold MAE for alpha 0.1 feature ['Zdr', 'radardist_km']: 20.1942128641 
+2015-11-24 19:37:30,102 coef: [ 0. -0.]
+2015-11-24 19:37:30,102 average 50-fold MAE for alpha 2 feature ['Zdr', 'radardist_km']: 20.209332214 
+2015-11-24 19:37:30,308 coef: [ 0.05020559 -0.02074137]
+2015-11-24 19:37:30,308 average 50-fold MAE for alpha 0.001 feature ['Zdr', 'radardist_km']: 20.1928789623 
+2015-11-24 19:37:31,172 coef: [ 0. -0.]
+2015-11-24 19:37:31,173 average 50-fold MAE for alpha 1 feature ['Zdr', 'radardist_km']: 20.209332214 
+2015-11-24 19:37:31,230 try alpha = 20
+2015-11-24 19:38:03,992 coef: [ 0. -0.]
+2015-11-24 19:38:03,992 average 50-fold MAE for alpha 20 feature ['Zdr', 'radardist_km']: 20.209332214 

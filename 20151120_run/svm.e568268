@@ -1,0 +1,50 @@
+2015-11-20 20:36:35,771 started
+2015-11-20 20:37:18,847 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-20 20:44:35,862 preprocessing done
+./20151120_testSVM.py:67: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+2015-11-20 20:44:40,483 try feature ['Ref', 'Kdp']
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+2015-11-21 10:09:56,789 average MAE for kernel linear c 0.001 epsilon 0.001 feature ['Ref', 'Kdp']: 33.2164657198
+2015-11-21 19:18:24,529 average MAE for kernel poly c 0.001 epsilon 0.001 feature ['Ref', 'Kdp']: 88.5231087303
+2015-11-21 21:32:13,743 average MAE for kernel linear c 0.01 epsilon 0.001 feature ['Ref', 'Kdp']: 32.078684704
+2015-11-21 22:26:25,260 average MAE for kernel sigmoid c 0.001 epsilon 0.001 feature ['Ref', 'Kdp']: 31.4340387232
+2015-11-22 06:25:50,053 average MAE for kernel rbf c 0.001 epsilon 0.001 feature ['Ref', 'Kdp']: 35.3558604683
+2015-11-22 11:37:23,657 average MAE for kernel rbf c 0.01 epsilon 0.001 feature ['Ref', 'Kdp']: 35.352890012
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/svm/base.py:209: ConvergenceWarning: Solver terminated early (max_iter=20000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.
+  % self.max_iter, ConvergenceWarning)
+2015-11-23 00:38:59,377 average MAE for kernel poly c 0.01 epsilon 0.001 feature ['Ref', 'Kdp']: 205.920213817
+2015-11-23 04:01:30,469 average MAE for kernel poly c 0.1 epsilon 0.001 feature ['Ref', 'Kdp']: 1740.93473923
+2015-11-23 04:03:41,171 average MAE for kernel sigmoid c 0.1 epsilon 0.001 feature ['Ref', 'Kdp']: 31.4340387232
+2015-11-23 10:08:58,418 average MAE for kernel linear c 0.1 epsilon 0.001 feature ['Ref', 'Kdp']: 26.2243758166
+2015-11-23 10:59:39,554 average MAE for kernel sigmoid c 0.01 epsilon 0.001 feature ['Ref', 'Kdp']: 31.4340387232

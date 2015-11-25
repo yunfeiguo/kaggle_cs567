@@ -1,0 +1,33 @@
+2015-11-24 18:57:14,311 started
+2015-11-24 18:57:44,416 reading done
+2015-11-24 19:04:58,560 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 19:16:08,230 try feature ['Ref', 'Kdp', 'MarshallPalmer']
+2015-11-24 19:16:08,250 try alpha = 0.001
+2015-11-24 19:16:08,262 try alpha = 0.1
+2015-11-24 19:16:08,276 try alpha = 0.5
+2015-11-24 19:16:08,290 try alpha = 1
+2015-11-24 19:16:08,307 try alpha = 2
+2015-11-24 19:16:08,321 try alpha = 4
+2015-11-24 19:16:08,338 try alpha = 8
+2015-11-24 19:16:08,355 try alpha = 12
+2015-11-24 19:17:09,666 coef: [ 0.00473542 -0.          0.09508845]
+2015-11-24 19:17:09,667 average 50-fold MAE for alpha 0.5 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.015617139 
+2015-11-24 19:17:11,141 coef: [ 0.00509611 -0.          0.        ]
+2015-11-24 19:17:11,142 average 50-fold MAE for alpha 12 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.0953106719 
+2015-11-24 19:17:13,638 coef: [ 0.00616326 -0.          0.        ]
+2015-11-24 19:17:13,639 average 50-fold MAE for alpha 2 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.0821236374 
+2015-11-24 19:17:13,929 coef: [ 0.00594983 -0.          0.        ]
+2015-11-24 19:17:13,929 average 50-fold MAE for alpha 4 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.0843214676 
+2015-11-24 19:17:15,285 coef: [ 0.00575874 -0.          0.03061416]
+2015-11-24 19:17:15,285 average 50-fold MAE for alpha 1 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.0585941056 
+2015-11-24 19:17:16,076 coef: [ 0.00552297 -0.          0.        ]
+2015-11-24 19:17:16,076 average 50-fold MAE for alpha 8 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.089394878 
+2015-11-24 19:17:17,156 coef: [ 0.00371761 -0.00173466  0.15940461]
+2015-11-24 19:17:17,157 average 50-fold MAE for alpha 0.001 feature ['Ref', 'Kdp', 'MarshallPalmer']: 19.9787245837 
+2015-11-24 19:17:18,037 coef: [ 0.00391819 -0.00071155  0.14665591]
+2015-11-24 19:17:18,037 average 50-fold MAE for alpha 0.1 feature ['Ref', 'Kdp', 'MarshallPalmer']: 19.9855959713 
+2015-11-24 19:17:18,099 try alpha = 20
+2015-11-24 19:17:52,081 coef: [ 0.00424238 -0.          0.        ]
+2015-11-24 19:17:52,082 average 50-fold MAE for alpha 20 feature ['Ref', 'Kdp', 'MarshallPalmer']: 20.1093070164 

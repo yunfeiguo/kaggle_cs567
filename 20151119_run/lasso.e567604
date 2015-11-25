@@ -1,0 +1,54 @@
+2015-11-19 23:05:19,790 started
+2015-11-19 23:06:06,386 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-19 23:13:29,663 preprocessing done
+./20151119_testLasso.opt.py:71: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+2015-11-19 23:13:31,384 try feature ['Ref', 'Kdp']
+2015-11-19 23:13:31,418 try alpha = 8
+2015-11-19 23:13:31,448 try alpha = 9
+2015-11-19 23:13:31,480 try alpha = 10
+2015-11-19 23:14:43,579 average 10-fold MAE for alpha 8 feature ['Ref', 'Kdp']
+2015-11-19 23:14:43,580 26.8005052924
+2015-11-19 23:14:50,496 average 10-fold MAE for alpha 10 feature ['Ref', 'Kdp']
+2015-11-19 23:14:50,496 25.63736978
+2015-11-19 23:14:52,732 average 10-fold MAE for alpha 9 feature ['Ref', 'Kdp']
+2015-11-19 23:14:52,732 26.218923956
+2015-11-19 23:14:52,861 try alpha = 11
+2015-11-19 23:14:52,890 try alpha = 12
+2015-11-19 23:14:52,923 try alpha = 13
+2015-11-19 23:14:52,957 try alpha = 14
+2015-11-19 23:14:52,992 try alpha = 15
+2015-11-19 23:16:11,664 average 10-fold MAE for alpha 11 feature ['Ref', 'Kdp']
+2015-11-19 23:16:11,664 25.0558554498
+2015-11-19 23:16:17,073 average 10-fold MAE for alpha 12 feature ['Ref', 'Kdp']
+2015-11-19 23:16:17,073 24.4743756879
+2015-11-19 23:16:24,591 average 10-fold MAE for alpha 15 feature ['Ref', 'Kdp']
+2015-11-19 23:16:24,591 22.7302580482
+2015-11-19 23:16:26,991 average 10-fold MAE for alpha 14 feature ['Ref', 'Kdp']
+2015-11-19 23:16:26,991 23.3115659611
+2015-11-19 23:16:27,840 average 10-fold MAE for alpha 13 feature ['Ref', 'Kdp']
+2015-11-19 23:16:27,841 23.8929393869
+2015-11-19 23:16:27,977 try alpha = 16
+2015-11-19 23:16:28,007 try alpha = 17
+2015-11-19 23:16:28,041 try alpha = 18
+2015-11-19 23:16:28,082 try alpha = 19
+2015-11-19 23:16:28,120 try alpha = 20
+2015-11-19 23:17:46,693 average 10-fold MAE for alpha 18 feature ['Ref', 'Kdp']
+2015-11-19 23:17:46,694 20.9871252087
+2015-11-19 23:17:50,408 average 10-fold MAE for alpha 17 feature ['Ref', 'Kdp']
+2015-11-19 23:17:50,408 21.5679774868
+2015-11-19 23:18:01,877 average 10-fold MAE for alpha 20 feature ['Ref', 'Kdp']
+2015-11-19 23:18:01,877 19.9839821752
+2015-11-19 23:18:04,891 average 10-fold MAE for alpha 19 feature ['Ref', 'Kdp']
+2015-11-19 23:18:04,892 20.4066682807
+2015-11-19 23:18:04,986 average 10-fold MAE for alpha 16 feature ['Ref', 'Kdp']
+2015-11-19 23:18:04,986 22.1490464564

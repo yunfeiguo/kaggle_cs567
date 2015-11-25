@@ -1,0 +1,40 @@
+2015-11-20 19:16:11,838 started
+2015-11-20 19:16:55,336 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-20 19:24:27,268 preprocessing done
+./check_error_dist.py:71: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-22 21:57:50,089 started
+Traceback (most recent call last):
+  File "./check_lasso_error_dist.py", line 28, in <module>
+    testData=pd.read_csv(fn_test,sep=',',index_col='Id')
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 491, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 278, in _read
+    return parser.read()
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 740, in read
+    ret = self._engine.read(nrows)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 1251, in read
+    index, names = self._make_index(data, alldata, names)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 909, in _make_index
+    index = self._get_simple_index(alldata, columns)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 943, in _get_simple_index
+    i = ix(idx)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 937, in ix
+    raise ValueError('Index %s invalid' % col)
+ValueError: Index Id invalid
+2015-11-22 21:59:32,504 started
+2015-11-22 21:59:58,579 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-22 22:04:42,287 preprocessing done
+2015-11-22 22:04:44,701 start modeling
+2015-11-22 22:04:44,855 features: ['RhoHV', 'Zdr']
+2015-11-22 22:04:44,860 coef: [-0.          2.72451063]

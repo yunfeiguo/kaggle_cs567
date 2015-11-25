@@ -1,0 +1,92 @@
+2015-11-23 10:02:32,987 started
+2015-11-23 10:03:19,641 reading done
+2015-11-23 10:10:31,691 preprocessing done
+2015-11-23 10:10:33,502 try feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 10:10:33,536 try alpha = 1
+2015-11-23 10:10:33,563 try alpha = 3
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 10:25:38,452 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 10:25:38,452 18.5258427439
+2015-11-23 10:26:24,914 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 10:26:24,914 18.5357538001
+2015-11-23 10:26:25,043 try alpha = 5
+2015-11-23 10:26:25,071 try alpha = 7
+2015-11-23 10:26:25,100 try alpha = 9
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 10:42:21,048 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 10:42:21,048 18.5083394559
+2015-11-23 10:44:24,400 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 10:44:24,401 18.5167056306
+2015-11-23 10:46:01,904 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 10:46:01,905 18.5006520715
+2015-11-23 10:46:02,036 try alpha = 11
+2015-11-23 10:46:02,065 try alpha = 13
+2015-11-23 10:46:02,094 try alpha = 15
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 11:04:13,646 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 11:04:13,647 18.482156335
+2015-11-23 11:04:38,149 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 11:04:38,150 18.4875022677
+2015-11-23 11:04:58,555 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 11:04:58,555 18.4936668562
+2015-11-23 11:04:58,684 try alpha = 17
+2015-11-23 11:04:58,711 try alpha = 19
+2015-11-23 11:04:58,741 try alpha = 21
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 11:22:59,814 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 11:22:59,814 18.4710055059
+2015-11-23 11:23:00,156 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 11:23:00,157 18.4776457798
+2015-11-23 11:23:13,621 average 50-fold MAE for alpha [100, 100000] feature ['Kdp', 'Zdr', 'radardist_km']
+2015-11-23 11:23:13,621 18.4739276515

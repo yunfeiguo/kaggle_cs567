@@ -15,7 +15,7 @@ def manyScatter(df,xcols,ycol):
     	#plt.savefig(df.columns[i]+'.png')
 def getMAE(prediction,reality):
     MAE=sum(abs(prediction-reality))/len(reality)
-    print('MAE:'+str(MAE))
+    #print('MAE:'+str(MAE))
     return(MAE)
 def marshall_palmer(ref, minutes_past):
     #print "Estimating rainfall from {0} observations".format(len(minutes_past))

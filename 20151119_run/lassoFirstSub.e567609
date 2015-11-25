@@ -1,0 +1,18 @@
+2015-11-19 23:25:52,264 started
+2015-11-19 23:26:38,442 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-19 23:33:59,111 preprocessing done
+./20151119_testFirstSubmissionParam.py:71: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+2015-11-19 23:34:01,024 try feature ['radardist_km', 'Kdp', 'radardist_km']
+2015-11-19 23:34:01,055 try alpha = 0.9
+2015-11-19 23:35:12,242 average 10-fold MAE for alpha 0.9 feature ['radardist_km', 'Kdp', 'radardist_km']
+2015-11-19 23:35:12,243 29.921272677

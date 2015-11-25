@@ -1,0 +1,12 @@
+echo ./20151119_testLasso.opt.py -f RhoHV | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f RhoHV Ref | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f RhoHV Zdr | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Ref Kdp | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Zdr radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Kdp radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f KdpXradardist_km Kdp radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Kdp Zdr radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Kdp Zdr Ref | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Kdp Zdr Ref radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f Zdr Ref radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso
+echo ./20151119_testLasso.opt.py -f RhoHV Zdr Kdp Ref radardist_km | qsub -V -cwd -pe smp 12 -l h_vmem=7g -S /bin/bash -N lasso

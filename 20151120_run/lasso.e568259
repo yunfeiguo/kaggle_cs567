@@ -1,0 +1,48 @@
+2015-11-20 19:53:45,759 started
+2015-11-20 19:54:18,508 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-20 19:59:59,045 preprocessing done
+./20151119_testLasso.opt.py:69: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+2015-11-20 20:00:02,725 try feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:02,792 try alpha = 1
+2015-11-20 20:00:02,853 try alpha = 3
+2015-11-20 20:00:02,918 try alpha = 5
+2015-11-20 20:00:19,160 average 10-fold MAE for alpha 1 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:19,171 20.3683814972
+2015-11-20 20:00:19,922 average 10-fold MAE for alpha 5 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:19,922 20.6231799985
+2015-11-20 20:00:19,967 average 10-fold MAE for alpha 3 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:19,968 20.6231799985
+2015-11-20 20:00:20,298 try alpha = 7
+2015-11-20 20:00:20,445 try alpha = 9
+2015-11-20 20:00:20,540 try alpha = 11
+2015-11-20 20:00:20,637 try alpha = 13
+2015-11-20 20:00:20,732 try alpha = 15
+2015-11-20 20:00:38,953 average 10-fold MAE for alpha 13 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:38,954 20.6231799985
+2015-11-20 20:00:39,547 average 10-fold MAE for alpha 7 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:39,548 20.6231799985
+2015-11-20 20:00:39,705 average 10-fold MAE for alpha 15 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:39,705 20.6231799985
+2015-11-20 20:00:40,397 average 10-fold MAE for alpha 11 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:40,397 20.6231799985
+2015-11-20 20:00:40,775 average 10-fold MAE for alpha 9 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:40,775 20.6231799985
+2015-11-20 20:00:41,004 try alpha = 17
+2015-11-20 20:00:41,104 try alpha = 19
+2015-11-20 20:00:41,198 try alpha = 21
+2015-11-20 20:00:57,926 average 10-fold MAE for alpha 19 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:57,927 20.6231799985
+2015-11-20 20:00:58,438 average 10-fold MAE for alpha 17 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:58,438 20.6231799985
+2015-11-20 20:00:58,651 average 10-fold MAE for alpha 21 feature ['RhoHV', 'Zdr']
+2015-11-20 20:00:58,651 20.6231799985

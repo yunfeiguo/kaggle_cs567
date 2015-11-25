@@ -1,0 +1,48 @@
+2015-11-20 19:53:45,746 started
+2015-11-20 19:54:32,485 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-20 20:01:43,986 preprocessing done
+./20151119_testLasso.opt.py:69: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+2015-11-20 20:01:49,162 try feature ['Kdp', 'radardist_km']
+2015-11-20 20:01:49,194 try alpha = 1
+2015-11-20 20:01:49,215 try alpha = 3
+2015-11-20 20:01:49,238 try alpha = 5
+2015-11-20 20:02:09,952 average 10-fold MAE for alpha 1 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:09,952 30.4599023118
+2015-11-20 20:02:10,337 average 10-fold MAE for alpha 3 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:10,337 29.4353822021
+2015-11-20 20:02:10,516 average 10-fold MAE for alpha 5 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:10,516 28.4224441401
+2015-11-20 20:02:10,593 try alpha = 7
+2015-11-20 20:02:10,617 try alpha = 9
+2015-11-20 20:02:10,642 try alpha = 11
+2015-11-20 20:02:10,667 try alpha = 13
+2015-11-20 20:02:10,694 try alpha = 15
+2015-11-20 20:02:34,890 average 10-fold MAE for alpha 15 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:34,890 23.6471242361
+2015-11-20 20:02:35,305 average 10-fold MAE for alpha 9 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:35,305 26.4414697554
+2015-11-20 20:02:35,392 average 10-fold MAE for alpha 13 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:35,393 24.5480390178
+2015-11-20 20:02:35,492 average 10-fold MAE for alpha 11 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:35,492 25.4814856612
+2015-11-20 20:02:35,514 average 10-fold MAE for alpha 7 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:35,514 27.423273242
+2015-11-20 20:02:35,601 try alpha = 17
+2015-11-20 20:02:35,623 try alpha = 19
+2015-11-20 20:02:35,646 try alpha = 21
+2015-11-20 20:02:54,653 average 10-fold MAE for alpha 21 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:54,653 21.2535366967
+2015-11-20 20:02:55,868 average 10-fold MAE for alpha 19 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:55,868 21.9811343214
+2015-11-20 20:02:56,029 average 10-fold MAE for alpha 17 feature ['Kdp', 'radardist_km']
+2015-11-20 20:02:56,029 22.7871150106

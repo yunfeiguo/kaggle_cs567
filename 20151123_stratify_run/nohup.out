@@ -1,0 +1,95 @@
+2015-11-23 07:43:52,817 started
+usage: stratifyLasso.opt.py [-h] -f F [F ...]
+stratifyLasso.opt.py: error: argument -f is required
+2015-11-23 07:44:06,697 started
+2015-11-23 07:44:07,142 reading done
+2015-11-23 07:44:10,321 preprocessing done
+2015-11-23 07:44:10,327 try feature ['RhoHV']
+2015-11-23 07:44:10,335 try alpha = 1
+2015-11-23 07:44:10,336 try alpha = 3
+2015-11-23 07:44:10,337 try alpha = 5
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 07:48:04,758 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:48:04,759 13.9189888802
+2015-11-23 07:48:05,188 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:48:05,188 13.8620184489
+2015-11-23 07:48:13,959 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:48:13,959 13.9786484983
+2015-11-23 07:48:13,974 try alpha = 7
+2015-11-23 07:48:13,975 try alpha = 9
+2015-11-23 07:48:13,977 try alpha = 11
+2015-11-23 07:48:13,978 try alpha = 13
+2015-11-23 07:48:13,980 try alpha = 15
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 07:52:15,596 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:52:15,596 13.7637456058
+2015-11-23 07:52:15,619 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:52:15,619 13.8073159304
+2015-11-23 07:53:02,649 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:53:02,650 13.6967665025
+2015-11-23 07:53:24,117 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:53:24,117 13.6566310578
+2015-11-23 07:53:25,137 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:53:25,137 13.7327034807
+2015-11-23 07:53:25,152 try alpha = 17
+2015-11-23 07:53:25,153 try alpha = 19
+2015-11-23 07:53:25,155 try alpha = 21
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-23 07:56:59,001 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:56:59,001 13.6520582398
+2015-11-23 07:58:16,902 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:58:16,902 13.6520582398
+2015-11-23 07:58:18,095 average 50-fold MAE for alpha [100, 100000] feature ['RhoHV']
+2015-11-23 07:58:18,096 13.6520582398
