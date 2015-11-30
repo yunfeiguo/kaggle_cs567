@@ -1,0 +1,33 @@
+2015-11-24 21:12:38,124 started
+2015-11-24 21:13:06,320 reading done
+2015-11-24 21:20:10,969 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:31:15,945 try feature ['Ref', 'RefXradardist_km', 'radardist_km']
+2015-11-24 21:31:15,966 try alpha = 0.001
+2015-11-24 21:31:15,979 try alpha = 0.1
+2015-11-24 21:31:15,994 try alpha = 0.5
+2015-11-24 21:31:16,010 try alpha = 1
+2015-11-24 21:31:16,027 try alpha = 2
+2015-11-24 21:31:16,041 try alpha = 4
+2015-11-24 21:31:16,059 try alpha = 8
+2015-11-24 21:31:16,075 try alpha = 12
+2015-11-24 21:36:00,962 coef: [-0.05507564 -0.          0.00275655]
+2015-11-24 21:36:00,974 average 50-fold MAE for alpha 1 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.4966596408 
+2015-11-24 21:36:35,958 coef: [-0.04924876  0.00050598  0.00252763]
+2015-11-24 21:36:35,969 average 50-fold MAE for alpha 4 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.498472721 
+2015-11-24 21:36:37,323 coef: [-0.05344536  0.          0.00269877]
+2015-11-24 21:36:37,323 average 50-fold MAE for alpha 2 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.4969653225 
+2015-11-24 21:36:45,756 coef: [-0.0319921   0.00278946  0.00181489]
+2015-11-24 21:36:45,762 average 50-fold MAE for alpha 12 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.5184825405 
+2015-11-24 21:36:56,148 coef: [-0.04062042  0.00164773  0.00217126]
+2015-11-24 21:36:56,154 average 50-fold MAE for alpha 8 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.5057704554 
+2015-11-24 21:36:59,123 coef: [-0.05628993 -0.00020861  0.00280882]
+2015-11-24 21:36:59,123 average 50-fold MAE for alpha 0.5 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.4968428598 
+2015-11-24 21:37:27,451 coef: [-0.05760654 -0.00056408  0.00287122]
+2015-11-24 21:37:27,454 average 50-fold MAE for alpha 0.1 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.4971698793 
+2015-11-24 21:37:55,190 coef: [-0.0579323  -0.00065203  0.00288666]
+2015-11-24 21:37:55,190 average 50-fold MAE for alpha 0.001 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.4972717087 
+2015-11-24 21:37:55,259 try alpha = 20
+2015-11-24 21:38:51,276 coef: [-0.01473545  0.00507294  0.00110216]
+2015-11-24 21:38:51,276 average 50-fold MAE for alpha 20 feature ['Ref', 'RefXradardist_km', 'radardist_km']: 20.55808476 

@@ -1,0 +1,33 @@
+2015-11-24 21:12:38,082 started
+2015-11-24 21:13:06,327 reading done
+2015-11-24 21:20:16,742 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:31:26,611 try feature ['Zdr', 'radardist_km']
+2015-11-24 21:31:26,630 try alpha = 0.001
+2015-11-24 21:31:26,642 try alpha = 0.1
+2015-11-24 21:31:26,658 try alpha = 0.5
+2015-11-24 21:31:26,672 try alpha = 1
+2015-11-24 21:31:26,691 try alpha = 2
+2015-11-24 21:31:26,710 try alpha = 4
+2015-11-24 21:31:26,730 try alpha = 8
+2015-11-24 21:31:26,752 try alpha = 12
+2015-11-24 21:32:27,598 coef: [ 0.00850834  0.        ]
+2015-11-24 21:32:27,606 average 50-fold MAE for alpha 0.5 feature ['Zdr', 'radardist_km']: 20.7967918183 
+2015-11-24 21:32:29,163 coef: [ 0.00750019  0.        ]
+2015-11-24 21:32:29,164 average 50-fold MAE for alpha 4 feature ['Zdr', 'radardist_km']: 20.798584456 
+2015-11-24 21:32:30,406 coef: [ 0.00519582 -0.        ]
+2015-11-24 21:32:30,406 average 50-fold MAE for alpha 12 feature ['Zdr', 'radardist_km']: 20.804220663 
+2015-11-24 21:32:40,435 coef: [ 0.00807628  0.        ]
+2015-11-24 21:32:40,436 average 50-fold MAE for alpha 2 feature ['Zdr', 'radardist_km']: 20.7975187361 
+2015-11-24 21:32:41,810 coef: [ 0.00866661  0.00138365]
+2015-11-24 21:32:41,810 average 50-fold MAE for alpha 0.001 feature ['Zdr', 'radardist_km']: 20.7965315548 
+2015-11-24 21:32:42,363 coef: [ 0.00634801 -0.        ]
+2015-11-24 21:32:42,363 average 50-fold MAE for alpha 8 feature ['Zdr', 'radardist_km']: 20.8011317296 
+2015-11-24 21:32:42,422 coef: [ 0.00862356  0.        ]
+2015-11-24 21:32:42,422 average 50-fold MAE for alpha 0.1 feature ['Zdr', 'radardist_km']: 20.7966112223 
+2015-11-24 21:32:42,613 coef: [ 0.00836432  0.        ]
+2015-11-24 21:32:42,614 average 50-fold MAE for alpha 1 feature ['Zdr', 'radardist_km']: 20.797027569 
+2015-11-24 21:32:42,661 try alpha = 20
+2015-11-24 21:33:16,942 coef: [ 0.00289146 -0.        ]
+2015-11-24 21:33:16,943 average 50-fold MAE for alpha 20 feature ['Zdr', 'radardist_km']: 20.8120390495 

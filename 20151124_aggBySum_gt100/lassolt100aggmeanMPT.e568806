@@ -1,0 +1,33 @@
+2015-11-24 21:33:38,184 started
+2015-11-24 21:34:07,975 reading done
+2015-11-24 21:41:21,219 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:52:26,724 try feature ['RhoHV', 'Ref', 'MarshallPalmer']
+2015-11-24 21:52:26,743 try alpha = 0.001
+2015-11-24 21:52:26,756 try alpha = 0.1
+2015-11-24 21:52:26,770 try alpha = 0.5
+2015-11-24 21:52:26,783 try alpha = 1
+2015-11-24 21:52:26,799 try alpha = 2
+2015-11-24 21:52:26,813 try alpha = 4
+2015-11-24 21:52:26,828 try alpha = 8
+2015-11-24 21:52:26,847 try alpha = 12
+2015-11-24 21:53:36,478 coef: [ 0.  0.  0.]
+2015-11-24 21:53:36,486 average 50-fold MAE for alpha 12 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.8253257566 
+2015-11-24 21:53:45,851 coef: [ 0.07668408  0.          0.24251629]
+2015-11-24 21:53:45,851 average 50-fold MAE for alpha 4 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.473831866 
+2015-11-24 21:53:46,181 coef: [ 0.08777798  0.          0.39161261]
+2015-11-24 21:53:46,182 average 50-fold MAE for alpha 1 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.3706277441 
+2015-11-24 21:53:46,468 coef: [ 0.09110614  0.          0.4363415 ]
+2015-11-24 21:53:46,468 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.3474889099 
+2015-11-24 21:53:48,335 coef: [ 0.08408001  0.          0.34191384]
+2015-11-24 21:53:48,335 average 50-fold MAE for alpha 2 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.4005854027 
+2015-11-24 21:53:48,646 coef: [ 0.08962696  0.          0.41646199]
+2015-11-24 21:53:48,647 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.3573099071 
+2015-11-24 21:53:48,782 coef: [ 0.06189222  0.          0.04372121]
+2015-11-24 21:53:48,783 average 50-fold MAE for alpha 8 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.6709224744 
+2015-11-24 21:53:50,213 coef: [ 0.09028946  0.47463349  0.44227946]
+2015-11-24 21:53:50,213 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.3452268293 
+2015-11-24 21:53:50,266 try alpha = 20
+2015-11-24 21:54:23,851 coef: [ 0.  0.  0.]
+2015-11-24 21:54:23,851 average 50-fold MAE for alpha 20 feature ['RhoHV', 'Ref', 'MarshallPalmer']: 20.8253257566 

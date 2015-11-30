@@ -1,0 +1,33 @@
+2015-11-24 20:48:08,267 started
+2015-11-24 20:48:38,415 reading done
+2015-11-24 20:55:50,064 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:06:59,272 try feature ['RhoHV', 'Ref']
+2015-11-24 21:06:59,294 try alpha = 0.001
+2015-11-24 21:06:59,309 try alpha = 0.1
+2015-11-24 21:06:59,325 try alpha = 0.5
+2015-11-24 21:06:59,343 try alpha = 1
+2015-11-24 21:06:59,361 try alpha = 2
+2015-11-24 21:06:59,379 try alpha = 4
+2015-11-24 21:06:59,397 try alpha = 8
+2015-11-24 21:06:59,417 try alpha = 12
+2015-11-24 21:08:14,922 coef: [ 0.01426044 -0.        ]
+2015-11-24 21:08:14,922 average 50-fold MAE for alpha 4 feature ['RhoHV', 'Ref']: 20.6186373954 
+2015-11-24 21:08:18,436 coef: [ 0.0222357  -0.44452694]
+2015-11-24 21:08:18,440 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'Ref']: 20.5422896665 
+2015-11-24 21:08:19,672 coef: [ 0.01347252 -0.        ]
+2015-11-24 21:08:19,672 average 50-fold MAE for alpha 12 feature ['RhoHV', 'Ref']: 20.6189465985 
+2015-11-24 21:08:25,735 coef: [ 0.01983365 -0.30747474]
+2015-11-24 21:08:25,738 average 50-fold MAE for alpha 1 feature ['RhoHV', 'Ref']: 20.5501140577 
+2015-11-24 21:08:25,799 coef: [ 0.01386648 -0.        ]
+2015-11-24 21:08:25,799 average 50-fold MAE for alpha 8 feature ['RhoHV', 'Ref']: 20.618550407 
+2015-11-24 21:08:28,067 coef: [ 0.01503074 -0.03340111]
+2015-11-24 21:08:28,067 average 50-fold MAE for alpha 2 feature ['RhoHV', 'Ref']: 20.6066153891 
+2015-11-24 21:08:30,227 coef: [ 0.02415748 -0.55417258]
+2015-11-24 21:08:30,227 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'Ref']: 20.5457840722 
+2015-11-24 21:08:31,920 coef: [ 0.02463315 -0.58131059]
+2015-11-24 21:08:31,920 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'Ref']: 20.5480229866 
+2015-11-24 21:08:31,975 try alpha = 20
+2015-11-24 21:09:06,043 coef: [ 0.0126846 -0.       ]
+2015-11-24 21:09:06,044 average 50-fold MAE for alpha 20 feature ['RhoHV', 'Ref']: 20.621223583 

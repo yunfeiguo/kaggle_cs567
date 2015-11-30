@@ -1,0 +1,67 @@
+2015-11-25 10:25:40,060 started
+2015-11-25 10:26:08,354 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-25 10:33:11,505 preprocessing done
+./aggByMean_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 10:50:13,169 try feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-11-25 10:50:13,213 try alpha = 0.001
+2015-11-25 10:50:13,231 try alpha = 0.1
+2015-11-25 10:50:13,258 try alpha = 0.5
+2015-11-25 10:50:13,290 try alpha = 1
+2015-11-25 10:50:13,315 try alpha = 2
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-11-25 10:51:38,176 coef: [  8.53719604e-02  -0.00000000e+00   1.06142180e-01   0.00000000e+00
+   5.32046039e-06  -2.46088232e-04  -4.22047129e-06]
+2015-11-25 10:51:38,178 average 50-fold MAE for alpha 0.1 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9771110668 
+2015-11-25 10:52:03,613 coef: [  6.17813559e-02  -0.00000000e+00   0.00000000e+00   1.10976835e-02
+   1.62923119e-05  -0.00000000e+00  -3.90639006e-06]
+2015-11-25 10:52:03,614 average 50-fold MAE for alpha 2 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 20.0761477682 
+2015-11-25 10:52:06,735 coef: [  7.76825863e-02  -0.00000000e+00   0.00000000e+00   3.55095514e-02
+   1.06650080e-05  -0.00000000e+00  -4.71246921e-06]
+2015-11-25 10:52:06,748 average 50-fold MAE for alpha 1 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 20.0209607024 
+2015-11-25 10:52:07,864 coef: [  8.56295705e-02  -0.00000000e+00   0.00000000e+00   4.77176979e-02
+   7.85114022e-06  -0.00000000e+00  -5.11553723e-06]
+2015-11-25 10:52:07,864 average 50-fold MAE for alpha 0.5 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9981889563 
+2015-11-25 11:03:36,913 coef: [  4.07475020e-02  -3.44289920e-02   9.53653197e-01  -4.69802891e-01
+   5.08779680e-06   5.79020475e-04  -3.31668586e-06]
+2015-11-25 11:03:36,914 average 50-fold MAE for alpha 0.001 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9511519376 
+2015-11-25 11:03:36,985 try alpha = 4
+2015-11-25 11:04:14,890 coef: [  1.10192875e-02  -0.00000000e+00   0.00000000e+00   0.00000000e+00
+   2.07666979e-05  -0.00000000e+00  -2.12395054e-06]
+2015-11-25 11:04:14,890 average 50-fold MAE for alpha 4 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 20.1857925274 
+2015-11-25 11:04:14,961 try alpha = 8
+2015-11-25 11:04:52,456 coef: [  0.00000000e+00  -0.00000000e+00   0.00000000e+00   0.00000000e+00
+   1.84251660e-05  -0.00000000e+00  -0.00000000e+00]
+2015-11-25 11:04:52,456 average 50-fold MAE for alpha 8 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 20.2089982051 
+2015-11-25 11:04:52,529 try alpha = 12
+2015-11-25 11:05:29,786 coef: [  0.00000000e+00  -0.00000000e+00   0.00000000e+00   0.00000000e+00
+   1.53052494e-05  -0.00000000e+00  -0.00000000e+00]
+2015-11-25 11:05:29,787 average 50-fold MAE for alpha 12 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 20.2090357122 
+2015-11-25 11:05:29,857 try alpha = 20
+2015-11-25 11:06:07,339 coef: [  0.00000000e+00  -0.00000000e+00   0.00000000e+00   0.00000000e+00
+   9.06541627e-06  -0.00000000e+00  -0.00000000e+00]
+2015-11-25 11:06:07,339 average 50-fold MAE for alpha 20 feature ['Ref', 'Kdp', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 20.2091109384 

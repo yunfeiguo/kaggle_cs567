@@ -1,0 +1,56 @@
+2015-11-25 10:21:40,108 started
+2015-11-25 10:22:09,747 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-25 10:29:14,760 preprocessing done
+./aggByMean_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 10:46:15,444 try feature ['Kdp', 'radardist_km']
+2015-11-25 10:46:15,484 try alpha = 0.001
+2015-11-25 10:46:15,505 try alpha = 0.1
+2015-11-25 10:46:15,527 try alpha = 0.5
+2015-11-25 10:46:15,553 try alpha = 1
+2015-11-25 10:46:15,590 try alpha = 2
+2015-11-25 10:46:56,993 coef: [ 0.02092133 -0.        ]
+2015-11-25 10:46:56,994 average 50-fold MAE for alpha 0.5 feature ['Kdp', 'radardist_km']: 20.2012107975 
+2015-11-25 10:46:59,898 coef: [ 0. -0.]
+2015-11-25 10:46:59,898 average 50-fold MAE for alpha 2 feature ['Kdp', 'radardist_km']: 20.2092079725 
+2015-11-25 10:47:00,689 coef: [ 0.04528026 -0.        ]
+2015-11-25 10:47:00,690 average 50-fold MAE for alpha 0.1 feature ['Kdp', 'radardist_km']: 20.1940510236 
+2015-11-25 10:47:01,715 coef: [ 0.05128998 -0.00875274]
+2015-11-25 10:47:01,716 average 50-fold MAE for alpha 0.001 feature ['Kdp', 'radardist_km']: 20.1927107912 
+2015-11-25 10:47:02,004 coef: [ 0. -0.]
+2015-11-25 10:47:02,004 average 50-fold MAE for alpha 1 feature ['Kdp', 'radardist_km']: 20.2092079725 
+2015-11-25 10:47:02,069 try alpha = 4
+2015-11-25 10:47:36,238 coef: [ 0. -0.]
+2015-11-25 10:47:36,238 average 50-fold MAE for alpha 4 feature ['Kdp', 'radardist_km']: 20.2092079725 
+2015-11-25 10:47:36,307 try alpha = 8
+2015-11-25 10:48:10,393 coef: [ 0. -0.]
+2015-11-25 10:48:10,393 average 50-fold MAE for alpha 8 feature ['Kdp', 'radardist_km']: 20.2092079725 
+2015-11-25 10:48:10,460 try alpha = 12
+2015-11-25 10:48:44,573 coef: [ 0. -0.]
+2015-11-25 10:48:44,573 average 50-fold MAE for alpha 12 feature ['Kdp', 'radardist_km']: 20.2092079725 
+2015-11-25 10:48:44,639 try alpha = 20
+2015-11-25 10:49:18,720 coef: [ 0. -0.]
+2015-11-25 10:49:18,720 average 50-fold MAE for alpha 20 feature ['Kdp', 'radardist_km']: 20.2092079725 

@@ -22,8 +22,8 @@ args = parser.parse_args()
 
 
 #reading in training data
-#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train.csv'
-fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train_100000.csv'
+fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train.csv'
+#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train_100000.csv'
 #fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/smalltest.v2.csv'
 #fn_out='/home/yunfeiguo/projects/kaggle_cs567/results/2nd_submission.csv'
 trainData=pd.read_csv(fn_train,sep=',',index_col='Id')
@@ -137,8 +137,8 @@ MP = trainCleaned.groupby(trainCleaned.index).apply(benchmarkFunc)
 MP.columns = ['MarshallPalmer','Katsumata','Brandes','Sachidanazrnic','RyzhkovZrnic']
 Expected = trainCleaned.groupby(trainCleaned.index).agg(np.mean)
 Expected = Expected['Expected']
-#trainCleaned = trainCleaned.groupby(trainCleaned.index).agg(np.sum)
-trainCleaned = trainCleaned.groupby(trainCleaned.index).agg(np.mean)
+trainCleaned = trainCleaned.groupby(trainCleaned.index).agg(np.sum)
+#trainCleaned = trainCleaned.groupby(trainCleaned.index).agg(np.mean)
 trainCleaned['Expected'] = Expected
 trainCleaned = trainCleaned.join(MP)
 kf = KFold(trainCleaned.shape[0],n_folds=50,shuffle=True)
@@ -151,22 +151,9 @@ for featureCombo in [args.f]:
 	p = multiprocessing.Process(target=runModel, args=(i,featureCombo))
 	jobs.append(p)
 	p.start()
-	if i % 5 == 0:
+	if i % 2 == 0:
 	    for j in jobs:
 		j.join()
-    	#mae = np.array([])   
-   	#logging.warning('try alpha = %s' % i)
-    	#for ktrain,ktest in kf:
-    	#    ktrainData = trainCleaned.iloc[ktrain,]
-    	#    ktestData = trainCleaned.iloc[ktest,]    
-    	#    x = ktrainData.groupby(ktrainData.index).agg(np.mean)
-    	#    y = ktestData.groupby(ktestData.index).agg(np.mean)
-    	#    model = linear_model.Lasso(alpha = i)
-    	#    model.fit(x[featureCombo],x['Expected'])
-    	#    mae = np.append(mae,(getMAE(np.dot(y[featureCombo],model.coef_),y['Expected'])))
-    	#allMAE.append(mae.mean())
-    #logging.warning('average 10-fold MAE for alpha=10~20')
-    #logging.warning(allMAE)
 
 #x = trainCleaned.groupby(trainCleaned.index).agg(np.mean)
 #y = testData.groupby(testData.index).agg(np.mean)

@@ -1,0 +1,33 @@
+2015-11-24 21:13:08,135 started
+2015-11-24 21:13:37,385 reading done
+2015-11-24 21:20:52,198 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:32:00,307 try feature ['RhoHV', 'Ref']
+2015-11-24 21:32:00,330 try alpha = 0.001
+2015-11-24 21:32:00,345 try alpha = 0.1
+2015-11-24 21:32:00,362 try alpha = 0.5
+2015-11-24 21:32:00,380 try alpha = 1
+2015-11-24 21:32:00,398 try alpha = 2
+2015-11-24 21:32:00,416 try alpha = 4
+2015-11-24 21:32:00,434 try alpha = 8
+2015-11-24 21:32:00,452 try alpha = 12
+2015-11-24 21:32:54,018 coef: [ 0.27266864 -0.        ]
+2015-11-24 21:32:54,018 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'Ref']: 20.575940172 
+2015-11-24 21:32:55,825 coef: [ 0.18327385 -0.        ]
+2015-11-24 21:32:55,825 average 50-fold MAE for alpha 4 feature ['RhoHV', 'Ref']: 20.5861951862 
+2015-11-24 21:32:57,147 coef: [ 0.28288518 -0.        ]
+2015-11-24 21:32:57,147 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'Ref']: 20.5793827515 
+2015-11-24 21:32:57,581 coef: [ 0.08110839  0.        ]
+2015-11-24 21:32:57,581 average 50-fold MAE for alpha 8 feature ['RhoHV', 'Ref']: 20.6922520195 
+2015-11-24 21:32:57,931 coef: [ 0.25989795 -0.        ]
+2015-11-24 21:32:57,931 average 50-fold MAE for alpha 1 feature ['RhoHV', 'Ref']: 20.5728666863 
+2015-11-24 21:32:58,047 coef: [ 0.  0.]
+2015-11-24 21:32:58,047 average 50-fold MAE for alpha 12 feature ['RhoHV', 'Ref']: 20.8253257566 
+2015-11-24 21:32:58,214 coef: [ 0.23435659 -0.        ]
+2015-11-24 21:32:58,214 average 50-fold MAE for alpha 2 feature ['RhoHV', 'Ref']: 20.5710800118 
+2015-11-24 21:32:59,183 coef: [ 0.29194784 -4.28776645]
+2015-11-24 21:32:59,183 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'Ref']: 20.5688677111 
+2015-11-24 21:32:59,254 try alpha = 20
+2015-11-24 21:33:32,601 coef: [ 0.  0.]
+2015-11-24 21:33:32,601 average 50-fold MAE for alpha 20 feature ['RhoHV', 'Ref']: 20.8253257566 

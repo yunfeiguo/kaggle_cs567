@@ -122,7 +122,7 @@ for featureCombo in [args.f]:
 	p = multiprocessing.Process(target=runModel, args=(i,featureCombo))
 	jobs.append(p)
 	p.start()
-	if i % 3 == 0:
+	if i % 2 == 0:
 	    for j in jobs:
 		j.join()
     	#mae = np.array([])   

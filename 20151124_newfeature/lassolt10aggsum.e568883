@@ -1,0 +1,58 @@
+2015-11-25 09:53:44,062 started
+2015-11-25 09:54:13,081 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-25 10:01:24,833 preprocessing done
+./aggBySum_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 10:18:37,698 try feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']
+2015-11-25 10:18:37,741 try alpha = 0.001
+2015-11-25 10:18:37,761 try alpha = 0.1
+2015-11-25 10:18:37,780 try alpha = 0.5
+2015-11-25 10:18:37,815 try alpha = 1
+2015-11-25 10:18:37,841 try alpha = 2
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-11-25 10:19:40,937 coef: [ 0.00365927 -0.          0.        ]
+2015-11-25 10:19:40,946 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1923805573 
+2015-11-25 10:19:45,436 coef: [ 0.00339867 -0.          0.        ]
+2015-11-25 10:19:45,439 average 50-fold MAE for alpha 1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1931574895 
+2015-11-25 10:19:46,975 coef: [ 0.0031091  0.         0.       ]
+2015-11-25 10:19:46,976 average 50-fold MAE for alpha 2 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1941061337 
+2015-11-25 10:19:49,339 coef: [ 0.00354345 -0.          0.        ]
+2015-11-25 10:19:49,339 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1927204507 
+2015-11-25 10:25:23,898 coef: [ 0.00407622 -0.0051745  -0.0002663 ]
+2015-11-25 10:25:23,899 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1921479655 
+2015-11-25 10:25:23,955 try alpha = 4
+2015-11-25 10:25:59,623 coef: [ 0.00252998  0.          0.        ]
+2015-11-25 10:25:59,624 average 50-fold MAE for alpha 4 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1962878935 
+2015-11-25 10:25:59,681 try alpha = 8
+2015-11-25 10:26:35,267 coef: [ 0.00137173  0.          0.        ]
+2015-11-25 10:26:35,268 average 50-fold MAE for alpha 8 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2014189406 
+2015-11-25 10:26:35,330 try alpha = 12
+2015-11-25 10:27:10,900 coef: [ 0.00021348  0.          0.        ]
+2015-11-25 10:27:10,900 average 50-fold MAE for alpha 12 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2079449202 
+2015-11-25 10:27:10,960 try alpha = 20
+2015-11-25 10:27:46,273 coef: [ 0.  0.  0.]
+2015-11-25 10:27:46,273 average 50-fold MAE for alpha 20 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092186117 

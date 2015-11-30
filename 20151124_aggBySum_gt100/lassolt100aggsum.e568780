@@ -1,0 +1,33 @@
+2015-11-24 21:12:53,381 started
+2015-11-24 21:13:22,596 reading done
+2015-11-24 21:20:37,452 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:31:51,939 try feature ['KdpXradardist_km', 'Kdp', 'radardist_km']
+2015-11-24 21:31:51,957 try alpha = 0.001
+2015-11-24 21:31:51,970 try alpha = 0.1
+2015-11-24 21:31:51,985 try alpha = 0.5
+2015-11-24 21:31:51,997 try alpha = 1
+2015-11-24 21:31:52,012 try alpha = 2
+2015-11-24 21:31:52,028 try alpha = 4
+2015-11-24 21:31:52,044 try alpha = 8
+2015-11-24 21:31:52,061 try alpha = 12
+2015-11-24 21:33:02,224 coef: [  8.36451434e-03   0.00000000e+00  -1.04452191e-05]
+2015-11-24 21:33:02,230 average 50-fold MAE for alpha 1 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.797030687 
+2015-11-24 21:33:10,301 coef: [ 0.00750019  0.         -0.        ]
+2015-11-24 21:33:10,311 average 50-fold MAE for alpha 4 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.798584456 
+2015-11-24 21:33:15,266 coef: [ 0.00519582  0.         -0.        ]
+2015-11-24 21:33:15,273 average 50-fold MAE for alpha 12 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.804220663 
+2015-11-24 21:33:15,513 coef: [  8.50940985e-03   0.00000000e+00  -5.78997316e-05]
+2015-11-24 21:33:15,513 average 50-fold MAE for alpha 0.5 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.7967859638 
+2015-11-24 21:33:16,975 coef: [ 0.00634801  0.         -0.        ]
+2015-11-24 21:33:16,975 average 50-fold MAE for alpha 8 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.8011317296 
+2015-11-24 21:33:18,757 coef: [ 0.00807628  0.         -0.        ]
+2015-11-24 21:33:18,758 average 50-fold MAE for alpha 2 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.7975187361 
+2015-11-24 21:33:36,675 coef: [ 0.00862932  0.00237973 -0.00030721]
+2015-11-24 21:33:36,675 average 50-fold MAE for alpha 0.1 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.7965551406 
+2015-11-24 21:33:47,268 coef: [ 0.00867582  0.01297719 -0.00125779]
+2015-11-24 21:33:47,269 average 50-fold MAE for alpha 0.001 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.7964221256 
+2015-11-24 21:33:47,320 try alpha = 20
+2015-11-24 21:34:20,950 coef: [ 0.00289146  0.         -0.        ]
+2015-11-24 21:34:20,951 average 50-fold MAE for alpha 20 feature ['KdpXradardist_km', 'Kdp', 'radardist_km']: 20.8120390495 

@@ -1,0 +1,33 @@
+2015-11-24 21:09:23,048 started
+2015-11-24 21:09:52,341 reading done
+2015-11-24 21:17:06,496 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:28:17,248 try feature ['Ref', 'Kdp']
+2015-11-24 21:28:17,274 try alpha = 0.001
+2015-11-24 21:28:17,291 try alpha = 0.1
+2015-11-24 21:28:17,309 try alpha = 0.5
+2015-11-24 21:28:17,328 try alpha = 1
+2015-11-24 21:28:17,347 try alpha = 2
+2015-11-24 21:28:17,365 try alpha = 4
+2015-11-24 21:28:17,388 try alpha = 8
+2015-11-24 21:28:17,406 try alpha = 12
+2015-11-24 21:29:21,292 coef: [ 0.01426044 -0.        ]
+2015-11-24 21:29:21,293 average 50-fold MAE for alpha 4 feature ['Ref', 'Kdp']: 20.6186373954 
+2015-11-24 21:29:22,289 coef: [ 0.01465818 -0.00229949]
+2015-11-24 21:29:22,289 average 50-fold MAE for alpha 0.001 feature ['Ref', 'Kdp']: 20.6191056517 
+2015-11-24 21:29:23,932 coef: [ 0.01347252 -0.        ]
+2015-11-24 21:29:23,932 average 50-fold MAE for alpha 12 feature ['Ref', 'Kdp']: 20.6189465985 
+2015-11-24 21:29:26,629 coef: [ 0.01386648 -0.        ]
+2015-11-24 21:29:26,629 average 50-fold MAE for alpha 8 feature ['Ref', 'Kdp']: 20.618550407 
+2015-11-24 21:29:26,872 coef: [ 0.01445742 -0.        ]
+2015-11-24 21:29:26,873 average 50-fold MAE for alpha 2 feature ['Ref', 'Kdp']: 20.6188627727 
+2015-11-24 21:29:27,171 coef: [ 0.01464666 -0.00125341]
+2015-11-24 21:29:27,171 average 50-fold MAE for alpha 0.1 feature ['Ref', 'Kdp']: 20.6191299211 
+2015-11-24 21:29:28,385 coef: [ 0.01460516 -0.        ]
+2015-11-24 21:29:28,386 average 50-fold MAE for alpha 0.5 feature ['Ref', 'Kdp']: 20.6191077216 
+2015-11-24 21:29:29,363 coef: [ 0.01455591 -0.        ]
+2015-11-24 21:29:29,364 average 50-fold MAE for alpha 1 feature ['Ref', 'Kdp']: 20.6190187811 
+2015-11-24 21:29:29,432 try alpha = 20
+2015-11-24 21:30:03,301 coef: [ 0.0126846 -0.       ]
+2015-11-24 21:30:03,302 average 50-fold MAE for alpha 20 feature ['Ref', 'Kdp']: 20.621223583 

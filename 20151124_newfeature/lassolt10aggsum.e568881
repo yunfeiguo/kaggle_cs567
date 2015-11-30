@@ -1,0 +1,56 @@
+2015-11-25 09:53:44,062 started
+2015-11-25 09:54:15,132 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-25 10:01:22,056 preprocessing done
+./aggBySum_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 10:18:25,455 try feature ['RhoHV', 'Ref']
+2015-11-25 10:18:25,507 try alpha = 0.001
+2015-11-25 10:18:25,528 try alpha = 0.1
+2015-11-25 10:18:25,562 try alpha = 0.5
+2015-11-25 10:18:25,593 try alpha = 1
+2015-11-25 10:18:25,635 try alpha = 2
+2015-11-25 10:19:16,913 coef: [ 0.00990671 -0.19452727]
+2015-11-25 10:19:16,914 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'Ref']: 20.0267621175 
+2015-11-25 10:19:19,859 coef: [ 0.00779768 -0.081223  ]
+2015-11-25 10:19:19,859 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'Ref']: 20.0514601676 
+2015-11-25 10:19:20,049 coef: [ 0.00615631 -0.        ]
+2015-11-25 10:19:20,050 average 50-fold MAE for alpha 2 feature ['RhoHV', 'Ref']: 20.082029523 
+2015-11-25 10:19:21,331 coef: [ 0.0062631 -0.       ]
+2015-11-25 10:19:21,331 average 50-fold MAE for alpha 1 feature ['RhoHV', 'Ref']: 20.081017986 
+2015-11-25 10:19:26,320 coef: [ 0.01042886 -0.22257433]
+2015-11-25 10:19:26,320 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'Ref']: 20.0235780127 
+2015-11-25 10:19:26,387 try alpha = 4
+2015-11-25 10:20:01,685 coef: [ 0.00594274 -0.        ]
+2015-11-25 10:20:01,686 average 50-fold MAE for alpha 4 feature ['RhoHV', 'Ref']: 20.0842256293 
+2015-11-25 10:20:01,752 try alpha = 8
+2015-11-25 10:20:37,155 coef: [ 0.00551558 -0.        ]
+2015-11-25 10:20:37,156 average 50-fold MAE for alpha 8 feature ['RhoHV', 'Ref']: 20.0892980401 
+2015-11-25 10:20:37,223 try alpha = 12
+2015-11-25 10:21:12,650 coef: [ 0.00508843 -0.        ]
+2015-11-25 10:21:12,650 average 50-fold MAE for alpha 12 feature ['RhoHV', 'Ref']: 20.0952121009 
+2015-11-25 10:21:12,717 try alpha = 20
+2015-11-25 10:21:48,242 coef: [ 0.00423412 -0.        ]
+2015-11-25 10:21:48,243 average 50-fold MAE for alpha 20 feature ['RhoHV', 'Ref']: 20.1092029578 

@@ -1,0 +1,33 @@
+2015-11-25 11:22:40,097 started
+2015-11-25 11:23:10,152 reading done
+2015-11-25 11:30:24,784 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 11:41:35,359 try feature ['Zdr', 'radardist_km', 'MarshallPalmer']
+2015-11-25 11:41:35,378 try alpha = 0.001
+2015-11-25 11:41:35,387 try alpha = 0.1
+2015-11-25 11:41:35,400 try alpha = 0.5
+2015-11-25 11:41:35,414 try alpha = 1
+2015-11-25 11:41:35,430 try alpha = 2
+2015-11-25 11:42:24,148 coef: [ 0.03025901 -0.          0.17025617]
+2015-11-25 11:42:24,161 average 50-fold MAE for alpha 0.5 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.0248885198 
+2015-11-25 11:42:24,788 coef: [ 0.         -0.          0.02096465]
+2015-11-25 11:42:24,788 average 50-fold MAE for alpha 2 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.185085355 
+2015-11-25 11:42:25,348 coef: [ 0.0621651  -0.04715949  0.22222253]
+2015-11-25 11:42:25,348 average 50-fold MAE for alpha 0.001 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 19.973436755 
+2015-11-25 11:42:28,687 coef: [ 0.       -0.        0.118632]
+2015-11-25 11:42:28,715 average 50-fold MAE for alpha 1 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.084106464 
+2015-11-25 11:42:29,123 coef: [ 0.0569839  -0.          0.21178768]
+2015-11-25 11:42:29,123 average 50-fold MAE for alpha 0.1 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 19.9830082098 
+2015-11-25 11:42:29,184 try alpha = 4
+2015-11-25 11:43:03,734 coef: [ 0. -0.  0.]
+2015-11-25 11:43:03,735 average 50-fold MAE for alpha 4 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.209332214 
+2015-11-25 11:43:03,837 try alpha = 8
+2015-11-25 11:43:38,226 coef: [ 0. -0.  0.]
+2015-11-25 11:43:38,226 average 50-fold MAE for alpha 8 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.209332214 
+2015-11-25 11:43:38,295 try alpha = 12
+2015-11-25 11:44:12,750 coef: [ 0. -0.  0.]
+2015-11-25 11:44:12,750 average 50-fold MAE for alpha 12 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.209332214 
+2015-11-25 11:44:12,814 try alpha = 20
+2015-11-25 11:44:47,248 coef: [ 0. -0.  0.]
+2015-11-25 11:44:47,248 average 50-fold MAE for alpha 20 feature ['Zdr', 'radardist_km', 'MarshallPalmer']: 20.209332214 

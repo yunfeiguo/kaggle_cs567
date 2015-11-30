@@ -1,0 +1,33 @@
+2015-11-24 21:33:08,109 started
+2015-11-24 21:33:36,195 reading done
+2015-11-24 21:40:47,884 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:51:51,972 try feature ['Zdr', 'radardist_km']
+2015-11-24 21:51:51,988 try alpha = 0.001
+2015-11-24 21:51:51,999 try alpha = 0.1
+2015-11-24 21:51:52,012 try alpha = 0.5
+2015-11-24 21:51:52,026 try alpha = 1
+2015-11-24 21:51:52,040 try alpha = 2
+2015-11-24 21:51:52,054 try alpha = 4
+2015-11-24 21:51:52,070 try alpha = 8
+2015-11-24 21:51:52,086 try alpha = 12
+2015-11-24 21:52:45,463 coef: [ 0. -0.]
+2015-11-24 21:52:45,464 average 50-fold MAE for alpha 4 feature ['Zdr', 'radardist_km']: 20.8253257566 
+2015-11-24 21:52:46,229 coef: [ 0.10258555  0.        ]
+2015-11-24 21:52:46,229 average 50-fold MAE for alpha 0.5 feature ['Zdr', 'radardist_km']: 20.7998061282 
+2015-11-24 21:52:47,054 coef: [ 0.07220518  0.        ]
+2015-11-24 21:52:47,055 average 50-fold MAE for alpha 1 feature ['Zdr', 'radardist_km']: 20.8050546483 
+2015-11-24 21:52:47,371 coef: [ 0.12688985  0.        ]
+2015-11-24 21:52:47,372 average 50-fold MAE for alpha 0.1 feature ['Zdr', 'radardist_km']: 20.7969577001 
+2015-11-24 21:52:48,093 coef: [ 0. -0.]
+2015-11-24 21:52:48,093 average 50-fold MAE for alpha 8 feature ['Zdr', 'radardist_km']: 20.8253257566 
+2015-11-24 21:52:48,375 coef: [ 0. -0.]
+2015-11-24 21:52:48,375 average 50-fold MAE for alpha 12 feature ['Zdr', 'radardist_km']: 20.8253257566 
+2015-11-24 21:52:49,417 coef: [ 0.01144444 -0.        ]
+2015-11-24 21:52:49,417 average 50-fold MAE for alpha 2 feature ['Zdr', 'radardist_km']: 20.8209828601 
+2015-11-24 21:52:50,280 coef: [ 0.13667623  0.12141772]
+2015-11-24 21:52:50,281 average 50-fold MAE for alpha 0.001 feature ['Zdr', 'radardist_km']: 20.7959251639 
+2015-11-24 21:52:50,332 try alpha = 20
+2015-11-24 21:53:23,595 coef: [ 0. -0.]
+2015-11-24 21:53:23,596 average 50-fold MAE for alpha 20 feature ['Zdr', 'radardist_km']: 20.8253257566 

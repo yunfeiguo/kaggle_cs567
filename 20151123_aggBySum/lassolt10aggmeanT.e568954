@@ -1,0 +1,33 @@
+2015-11-25 11:08:55,150 started
+2015-11-25 11:09:23,548 reading done
+2015-11-25 11:16:40,891 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 11:27:55,908 try feature ['Ref', 'Kdp']
+2015-11-25 11:27:55,934 try alpha = 0.001
+2015-11-25 11:27:55,945 try alpha = 0.1
+2015-11-25 11:27:55,957 try alpha = 0.5
+2015-11-25 11:27:55,971 try alpha = 1
+2015-11-25 11:27:55,987 try alpha = 2
+2015-11-25 11:28:36,065 coef: [ 0.10951587 -0.        ]
+2015-11-25 11:28:36,066 average 50-fold MAE for alpha 0.5 feature ['Ref', 'Kdp']: 20.0421388408 
+2015-11-25 11:28:36,608 coef: [ 0.0954644 -0.       ]
+2015-11-25 11:28:36,608 average 50-fold MAE for alpha 1 feature ['Ref', 'Kdp']: 20.0527693788 
+2015-11-25 11:28:38,092 coef: [ 0.12354564 -0.01508373]
+2015-11-25 11:28:38,092 average 50-fold MAE for alpha 0.001 feature ['Ref', 'Kdp']: 20.0351007489 
+2015-11-25 11:28:40,216 coef: [ 0.12075705 -0.        ]
+2015-11-25 11:28:40,216 average 50-fold MAE for alpha 0.1 feature ['Ref', 'Kdp']: 20.0362686635 
+2015-11-25 11:28:40,311 coef: [ 0.06736146 -0.        ]
+2015-11-25 11:28:40,311 average 50-fold MAE for alpha 2 feature ['Ref', 'Kdp']: 20.0856801808 
+2015-11-25 11:28:40,365 try alpha = 4
+2015-11-25 11:29:13,588 coef: [ 0.01115558 -0.        ]
+2015-11-25 11:29:13,589 average 50-fold MAE for alpha 4 feature ['Ref', 'Kdp']: 20.1860725074 
+2015-11-25 11:29:13,645 try alpha = 8
+2015-11-25 11:29:46,349 coef: [ 0. -0.]
+2015-11-25 11:29:46,350 average 50-fold MAE for alpha 8 feature ['Ref', 'Kdp']: 20.209332214 
+2015-11-25 11:29:46,413 try alpha = 12
+2015-11-25 11:30:19,276 coef: [ 0. -0.]
+2015-11-25 11:30:19,276 average 50-fold MAE for alpha 12 feature ['Ref', 'Kdp']: 20.209332214 
+2015-11-25 11:30:19,343 try alpha = 20
+2015-11-25 11:30:52,103 coef: [ 0. -0.]
+2015-11-25 11:30:52,103 average 50-fold MAE for alpha 20 feature ['Ref', 'Kdp']: 20.209332214 

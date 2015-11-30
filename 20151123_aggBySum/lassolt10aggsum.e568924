@@ -1,0 +1,68 @@
+2015-11-25 12:37:54,466 started
+2015-11-25 12:38:16,973 reading done
+2015-11-25 12:44:01,020 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 12:53:14,934 try feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']
+2015-11-25 12:53:15,058 try alpha = 0.001
+2015-11-25 12:53:15,195 try alpha = 0.1
+2015-11-25 12:53:15,338 try alpha = 0.5
+2015-11-25 12:53:15,490 try alpha = 1
+2015-11-25 12:53:15,658 try alpha = 2
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-11-25 13:12:45,695 coef: [ -6.71325152e-03   1.66678512e-03   1.27207642e-03   0.00000000e+00
+   0.00000000e+00   5.36754675e-03   0.00000000e+00  -0.00000000e+00
+   0.00000000e+00   1.68875782e-03  -0.00000000e+00  -0.00000000e+00
+  -0.00000000e+00  -0.00000000e+00   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   0.00000000e+00  -0.00000000e+00   0.00000000e+00
+   0.00000000e+00  -5.42749794e-05]
+2015-11-25 13:12:45,717 average 50-fold MAE for alpha 2 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.0127546339 
+2015-11-25 13:15:17,796 coef: [-0.00692913  0.00245937  0.00156278  0.          0.          0.00506768
+  0.         -0.         -0.          0.00199694 -0.         -0.         -0.
+ -0.          0.         -0.          0.          0.         -0.          0.
+  0.         -0.00297048]
+2015-11-25 13:15:17,804 average 50-fold MAE for alpha 1 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.0083736425 
+2015-11-25 13:18:53,577 coef: [-0.00732561  0.00304529  0.00211518  0.00113042  0.          0.00471652
+ -0.         -0.00136721 -0.          0.00245311 -0.         -0.         -0.
+ -0.          0.         -0.          0.          0.0046929  -0.
+  0.00258841  0.         -0.00439963]
+2015-11-25 13:18:53,585 average 50-fold MAE for alpha 0.5 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.0011513148 
+2015-11-25 13:29:01,787 coef: [-0.00775906  0.00361194  0.00242703  0.00208862  0.00101857  0.00423302
+ -0.         -0.00245503 -0.0008312   0.00314143 -0.         -0.         -0.
+ -0.         -0.         -0.0059819   0.          0.0109335  -0.
+  0.00864144  0.         -0.00516084]
+2015-11-25 13:29:01,791 average 50-fold MAE for alpha 0.1 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 19.9946110627 
+2015-11-25 13:59:17,944 coef: [-0.00238812  0.00429284  0.0024073   0.00246123  0.00158434  0.0038402
+  0.00026902 -0.00245672 -0.00165022  0.00362612 -0.         -0.02596713
+ -0.00128951 -0.15692513 -0.00120812 -0.01021725 -0.0008349   0.0131369
+ -0.00026957  0.00992435  0.00061619 -0.00532031]
+2015-11-25 13:59:17,952 average 50-fold MAE for alpha 0.001 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 19.990163771 
+2015-11-25 13:59:18,326 try alpha = 4
+2015-11-25 14:05:46,458 coef: [-0.00551481  0.00057411  0.00070472  0.          0.          0.00636982
+  0.          0.          0.          0.00070716 -0.         -0.         -0.
+ -0.          0.          0.          0.         -0.         -0.          0.
+  0.         -0.        ]
+2015-11-25 14:05:46,465 average 50-fold MAE for alpha 4 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.0197038964 
+2015-11-25 14:05:46,848 try alpha = 8
+2015-11-25 14:13:25,983 coef: [ -3.69317260e-03   0.00000000e+00   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   6.58626685e-03   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   9.64769266e-05  -0.00000000e+00  -0.00000000e+00
+  -0.00000000e+00  -0.00000000e+00  -0.00000000e+00   0.00000000e+00
+  -0.00000000e+00  -0.00000000e+00  -0.00000000e+00   0.00000000e+00
+   0.00000000e+00  -0.00000000e+00]
+2015-11-25 14:13:25,985 average 50-fold MAE for alpha 8 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.035642166 
+2015-11-25 14:13:26,314 try alpha = 12
+2015-11-25 14:17:14,473 coef: [ -2.14174430e-03   0.00000000e+00   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   5.64016377e-03   0.00000000e+00   0.00000000e+00
+   0.00000000e+00   7.27203605e-05  -0.00000000e+00  -0.00000000e+00
+  -0.00000000e+00  -0.00000000e+00  -0.00000000e+00   0.00000000e+00
+  -0.00000000e+00  -0.00000000e+00  -0.00000000e+00   0.00000000e+00
+   0.00000000e+00  -0.00000000e+00]
+2015-11-25 14:17:14,474 average 50-fold MAE for alpha 12 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.0540772117 
+2015-11-25 14:17:14,808 try alpha = 20
+2015-11-25 14:18:45,348 coef: [-0.          0.          0.          0.          0.          0.0040418   0.
+  0.          0.          0.00014107 -0.         -0.         -0.         -0.
+ -0.          0.         -0.         -0.         -0.          0.          0.
+ -0.        ]
+2015-11-25 14:18:45,352 average 50-fold MAE for alpha 20 feature ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th']: 20.0909546864 

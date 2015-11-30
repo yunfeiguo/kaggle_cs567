@@ -1,0 +1,58 @@
+2015-11-25 09:53:44,062 started
+2015-11-25 09:54:14,514 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-11-25 10:01:24,007 preprocessing done
+./aggByMean_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 10:18:36,478 try feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']
+2015-11-25 10:18:36,520 try alpha = 0.001
+2015-11-25 10:18:36,538 try alpha = 0.1
+2015-11-25 10:18:36,564 try alpha = 0.5
+2015-11-25 10:18:36,596 try alpha = 1
+2015-11-25 10:18:36,618 try alpha = 2
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-11-25 10:19:38,694 coef: [ 0.  0.  0.]
+2015-11-25 10:19:38,708 average 50-fold MAE for alpha 2 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092221384 
+2015-11-25 10:19:41,862 coef: [ 0.04517423  0.          0.        ]
+2015-11-25 10:19:41,869 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1940642187 
+2015-11-25 10:19:42,196 coef: [ 0.  0.  0.]
+2015-11-25 10:19:42,197 average 50-fold MAE for alpha 1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092221384 
+2015-11-25 10:19:42,823 coef: [ 0.02081414  0.          0.        ]
+2015-11-25 10:19:42,824 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2012241158 
+2015-11-25 10:23:29,569 coef: [ 0.11902518  0.55979385 -0.07077727]
+2015-11-25 10:23:29,569 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.1922391519 
+2015-11-25 10:23:29,636 try alpha = 4
+2015-11-25 10:24:05,273 coef: [ 0.  0.  0.]
+2015-11-25 10:24:05,273 average 50-fold MAE for alpha 4 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092221384 
+2015-11-25 10:24:05,337 try alpha = 8
+2015-11-25 10:24:40,965 coef: [ 0.  0.  0.]
+2015-11-25 10:24:40,965 average 50-fold MAE for alpha 8 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092221384 
+2015-11-25 10:24:41,032 try alpha = 12
+2015-11-25 10:25:16,616 coef: [ 0.  0.  0.]
+2015-11-25 10:25:16,616 average 50-fold MAE for alpha 12 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092221384 
+2015-11-25 10:25:16,681 try alpha = 20
+2015-11-25 10:25:52,311 coef: [ 0.  0.  0.]
+2015-11-25 10:25:52,312 average 50-fold MAE for alpha 20 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.2092221384 

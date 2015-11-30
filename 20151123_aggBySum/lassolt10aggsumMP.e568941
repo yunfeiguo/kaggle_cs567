@@ -1,0 +1,33 @@
+2015-11-25 10:54:40,120 started
+2015-11-25 10:55:08,788 reading done
+2015-11-25 11:02:25,772 preprocessing done
+./aggBySum_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 11:13:39,928 try feature ['RhoHV', 'Zdr', 'MarshallPalmer']
+2015-11-25 11:13:39,946 try alpha = 0.001
+2015-11-25 11:13:39,960 try alpha = 0.1
+2015-11-25 11:13:39,976 try alpha = 0.5
+2015-11-25 11:13:39,991 try alpha = 1
+2015-11-25 11:13:40,009 try alpha = 2
+2015-11-25 11:14:26,518 coef: [ 0.         -0.          0.16746567]
+2015-11-25 11:14:26,518 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.0401918878 
+2015-11-25 11:14:29,958 coef: [ 0.03426026 -0.01242039  0.21606771]
+2015-11-25 11:14:29,958 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 19.9966552908 
+2015-11-25 11:14:32,483 coef: [ 0.         -0.          0.02096465]
+2015-11-25 11:14:32,483 average 50-fold MAE for alpha 2 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.185085355 
+2015-11-25 11:14:32,859 coef: [ 0.01884873 -0.00922386  0.20670381]
+2015-11-25 11:14:32,859 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.0050208895 
+2015-11-25 11:14:33,677 coef: [ 0.       -0.        0.118632]
+2015-11-25 11:14:33,677 average 50-fold MAE for alpha 1 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.084106464 
+2015-11-25 11:14:33,745 try alpha = 4
+2015-11-25 11:15:08,166 coef: [ 0. -0.  0.]
+2015-11-25 11:15:08,167 average 50-fold MAE for alpha 4 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.209332214 
+2015-11-25 11:15:08,239 try alpha = 8
+2015-11-25 11:15:42,438 coef: [ 0. -0.  0.]
+2015-11-25 11:15:42,438 average 50-fold MAE for alpha 8 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.209332214 
+2015-11-25 11:15:42,515 try alpha = 12
+2015-11-25 11:16:16,802 coef: [ 0. -0.  0.]
+2015-11-25 11:16:16,802 average 50-fold MAE for alpha 12 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.209332214 
+2015-11-25 11:16:16,878 try alpha = 20
+2015-11-25 11:16:51,086 coef: [ 0. -0.  0.]
+2015-11-25 11:16:51,086 average 50-fold MAE for alpha 20 feature ['RhoHV', 'Zdr', 'MarshallPalmer']: 20.209332214 

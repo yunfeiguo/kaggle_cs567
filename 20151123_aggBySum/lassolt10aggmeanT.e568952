@@ -1,0 +1,33 @@
+2015-11-25 11:08:25,150 started
+2015-11-25 11:08:54,806 reading done
+2015-11-25 11:16:06,171 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-25 11:27:13,293 try feature ['RhoHV', 'Zdr']
+2015-11-25 11:27:13,316 try alpha = 0.001
+2015-11-25 11:27:13,331 try alpha = 0.1
+2015-11-25 11:27:13,344 try alpha = 0.5
+2015-11-25 11:27:13,360 try alpha = 1
+2015-11-25 11:27:13,378 try alpha = 2
+2015-11-25 11:27:50,031 coef: [ 0. -0.]
+2015-11-25 11:27:50,032 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:27:53,744 coef: [ 0. -0.]
+2015-11-25 11:27:53,745 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:27:55,601 coef: [ 0. -0.]
+2015-11-25 11:27:55,602 average 50-fold MAE for alpha 2 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:27:55,990 coef: [ 0. -0.]
+2015-11-25 11:27:55,991 average 50-fold MAE for alpha 1 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:27:56,550 coef: [ 1.44448932 -0.06402887]
+2015-11-25 11:27:56,550 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'Zdr']: 20.2062261608 
+2015-11-25 11:27:56,611 try alpha = 4
+2015-11-25 11:28:29,725 coef: [ 0. -0.]
+2015-11-25 11:28:29,725 average 50-fold MAE for alpha 4 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:28:29,801 try alpha = 8
+2015-11-25 11:29:03,129 coef: [ 0. -0.]
+2015-11-25 11:29:03,129 average 50-fold MAE for alpha 8 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:29:03,206 try alpha = 12
+2015-11-25 11:29:36,474 coef: [ 0. -0.]
+2015-11-25 11:29:36,475 average 50-fold MAE for alpha 12 feature ['RhoHV', 'Zdr']: 20.209332214 
+2015-11-25 11:29:36,549 try alpha = 20
+2015-11-25 11:30:09,852 coef: [ 0. -0.]
+2015-11-25 11:30:09,852 average 50-fold MAE for alpha 20 feature ['RhoHV', 'Zdr']: 20.209332214 

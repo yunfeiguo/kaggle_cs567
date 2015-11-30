@@ -1,0 +1,35 @@
+2015-11-24 21:13:23,018 started
+2015-11-24 21:13:53,021 reading done
+2015-11-24 21:21:06,758 preprocessing done
+./aggByMean_lasso.py:69: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-11-24 21:32:15,680 try feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']
+2015-11-24 21:32:15,699 try alpha = 0.001
+2015-11-24 21:32:15,711 try alpha = 0.1
+2015-11-24 21:32:15,727 try alpha = 0.5
+2015-11-24 21:32:15,743 try alpha = 1
+2015-11-24 21:32:15,761 try alpha = 2
+2015-11-24 21:32:15,780 try alpha = 4
+2015-11-24 21:32:15,803 try alpha = 8
+2015-11-24 21:32:15,820 try alpha = 12
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-11-24 21:33:24,262 coef: [ 0.10258555  0.          0.        ]
+2015-11-24 21:33:24,277 average 50-fold MAE for alpha 0.5 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.7998061282 
+2015-11-24 21:33:28,581 coef: [ 0.  0.  0.]
+2015-11-24 21:33:28,584 average 50-fold MAE for alpha 4 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.8253257566 
+2015-11-24 21:33:50,442 coef: [ 0.  0.  0.]
+2015-11-24 21:33:50,443 average 50-fold MAE for alpha 8 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.8253257566 
+2015-11-24 21:33:55,123 coef: [ 0.  0.  0.]
+2015-11-24 21:33:55,136 average 50-fold MAE for alpha 12 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.8253257566 
+2015-11-24 21:33:58,961 coef: [ 0.01144444  0.          0.        ]
+2015-11-24 21:33:58,969 average 50-fold MAE for alpha 2 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.8209828601 
+2015-11-24 21:33:59,210 coef: [ 0.07220518  0.          0.        ]
+2015-11-24 21:33:59,210 average 50-fold MAE for alpha 1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.8050546483 
+2015-11-24 21:33:59,306 coef: [ 0.12688985  0.          0.        ]
+2015-11-24 21:33:59,306 average 50-fold MAE for alpha 0.1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.7969577001 
+2015-11-24 21:38:33,224 coef: [ 0.87296715  3.02835001 -0.7615556 ]
+2015-11-24 21:38:33,224 average 50-fold MAE for alpha 0.001 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.7937591091 
+2015-11-24 21:38:33,275 try alpha = 20
+2015-11-24 21:39:07,796 coef: [ 0.  0.  0.]
+2015-11-24 21:39:07,796 average 50-fold MAE for alpha 20 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km']: 20.8253257566 
