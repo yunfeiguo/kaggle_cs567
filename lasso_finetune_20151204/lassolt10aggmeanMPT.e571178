@@ -1,0 +1,38 @@
+2015-12-05 14:46:52,537 started
+2015-12-05 14:47:23,708 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-12-05 14:54:41,648 preprocessing done
+./aggByMean_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:135: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 15:12:04,424 try feature ['RhoHV', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 15:12:04,424 try alpha = 1e-10
+2015-12-05 16:11:46,756 coef: [  1.48634728e+00   1.35548734e+00  -6.81943254e-01   5.09517855e-06
+  -4.84183371e-04  -3.05848184e-06]
+2015-12-05 16:11:46,760 aggByMean, average 50-fold MAE for alpha 1e-10 feature ['RhoHV', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9510819088 
+2015-12-05 16:11:46,760 try alpha = 1e-08
+2015-12-05 17:00:42,482 coef: [  1.48634227e+00   1.35548726e+00  -6.81943206e-01   5.09517276e-06
+  -4.84183305e-04  -3.05848225e-06]
+2015-12-05 17:00:42,488 aggByMean, average 50-fold MAE for alpha 1e-08 feature ['RhoHV', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.951081916 
+2015-12-05 17:00:42,489 try alpha = 1e-06

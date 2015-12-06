@@ -1,0 +1,129 @@
+2015-12-04 21:48:55,931 started
+2015-12-04 21:49:27,959 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-12-04 21:56:49,991 preprocessing done
+./aggBySum_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:135: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggBySum_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-04 22:14:23,268 try feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-04 22:14:23,268 try alpha = 1e-10
+2015-12-05 01:02:27,649 coef, [  4.26279482e-03  -6.49011914e-03  -2.16045660e-03   1.37748252e+00
+  -6.92380712e-01   5.75476070e-06   3.96073051e-04  -2.35481699e-06]
+2015-12-05 01:02:27,650 average 50-fold MAE for alpha 1e-10 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901102 
+2015-12-05 01:02:27,650 try alpha = 1e-10
+2015-12-05 01:36:27,159 coef, [  4.26279482e-03  -6.49011914e-03  -2.16045660e-03   1.37748252e+00
+  -6.92380712e-01   5.75476070e-06   3.96073051e-04  -2.35481699e-06]
+2015-12-05 01:36:27,159 average 50-fold MAE for alpha 1e-10 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901102 
+2015-12-05 01:36:27,160 try alpha = 1e-10
+2015-12-05 02:07:49,801 coef, [  4.26279482e-03  -6.49011914e-03  -2.16045660e-03   1.37748252e+00
+  -6.92380712e-01   5.75476070e-06   3.96073050e-04  -2.35481699e-06]
+2015-12-05 02:07:49,801 average 50-fold MAE for alpha 1e-10 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901102 
+2015-12-05 02:07:49,802 try alpha = 1e-10
+2015-12-05 02:38:09,024 coef, [  4.26279482e-03  -6.49011914e-03  -2.16045660e-03   1.37748252e+00
+  -6.92380712e-01   5.75476070e-06   3.96073049e-04  -2.35481699e-06]
+2015-12-05 02:38:09,024 average 50-fold MAE for alpha 1e-10 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901102 
+2015-12-05 02:38:09,024 try alpha = 1e-10
+2015-12-05 03:06:33,828 coef, [  4.26279482e-03  -6.49011914e-03  -2.16045659e-03   1.37748252e+00
+  -6.92380712e-01   5.75476070e-06   3.96073047e-04  -2.35481699e-06]
+2015-12-05 03:06:33,828 average 50-fold MAE for alpha 1e-10 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901102 
+2015-12-05 03:06:33,828 try alpha = 1e-08
+2015-12-05 03:35:12,187 coef, [  4.26279480e-03  -6.49011921e-03  -2.16045639e-03   1.37748239e+00
+  -6.92380638e-01   5.75476024e-06   3.96072973e-04  -2.35481701e-06]
+2015-12-05 03:35:12,187 average 50-fold MAE for alpha 1e-08 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.928090114 
+2015-12-05 03:35:12,188 try alpha = 1e-08
+2015-12-05 04:01:36,919 coef, [  4.26279480e-03  -6.49011919e-03  -2.16045628e-03   1.37748240e+00
+  -6.92380638e-01   5.75476024e-06   3.96072930e-04  -2.35481702e-06]
+2015-12-05 04:01:36,919 average 50-fold MAE for alpha 1e-08 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901139 
+2015-12-05 04:01:36,919 try alpha = 1e-08
+2015-12-05 04:26:47,715 coef, [  4.26279480e-03  -6.49011917e-03  -2.16045616e-03   1.37748240e+00
+  -6.92380639e-01   5.75476025e-06   3.96072882e-04  -2.35481703e-06]
+2015-12-05 04:26:47,716 average 50-fold MAE for alpha 1e-08 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901139 
+2015-12-05 04:26:47,716 try alpha = 1e-08
+2015-12-05 04:50:58,939 coef, [  4.26279480e-03  -6.49011910e-03  -2.16045579e-03   1.37748240e+00
+  -6.92380641e-01   5.75476025e-06   3.96072739e-04  -2.35481706e-06]
+2015-12-05 04:50:58,940 average 50-fold MAE for alpha 1e-08 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901137 
+2015-12-05 04:50:58,940 try alpha = 1e-08
+2015-12-05 05:15:04,564 coef, [  4.26279480e-03  -6.49011903e-03  -2.16045542e-03   1.37748240e+00
+  -6.92380643e-01   5.75476026e-06   3.96072596e-04  -2.35481710e-06]
+2015-12-05 05:15:04,564 average 50-fold MAE for alpha 1e-08 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280901136 
+2015-12-05 05:15:04,564 try alpha = 1e-06
+2015-12-05 05:38:38,113 coef, [  4.26279306e-03  -6.49012602e-03  -2.16043556e-03   1.37746978e+00
+  -6.92373188e-01   5.75471466e-06   3.96065118e-04  -2.35481917e-06]
+2015-12-05 05:38:38,114 average 50-fold MAE for alpha 1e-06 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280904922 
+2015-12-05 05:38:38,114 try alpha = 1e-06
+2015-12-05 05:59:37,479 coef, [  4.26279306e-03  -6.49012404e-03  -2.16042453e-03   1.37746990e+00
+  -6.92373255e-01   5.75471491e-06   3.96060823e-04  -2.35482018e-06]
+2015-12-05 05:59:37,480 average 50-fold MAE for alpha 1e-06 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280904876 
+2015-12-05 05:59:37,480 try alpha = 1e-06
+2015-12-05 06:19:38,732 coef, [  4.26279307e-03  -6.49012184e-03  -2.16041227e-03   1.37747003e+00
+  -6.92373329e-01   5.75471520e-06   3.96056050e-04  -2.35482131e-06]
+2015-12-05 06:19:38,733 average 50-fold MAE for alpha 1e-06 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280904826 
+2015-12-05 06:19:38,733 try alpha = 1e-06
+2015-12-05 06:38:20,656 coef, [  4.26279309e-03  -6.49011523e-03  -2.16037551e-03   1.37747041e+00
+  -6.92373553e-01   5.75471606e-06   3.96041733e-04  -2.35482467e-06]
+2015-12-05 06:38:20,657 average 50-fold MAE for alpha 1e-06 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280904674 
+2015-12-05 06:38:20,657 try alpha = 1e-06
+2015-12-05 06:56:38,763 coef, [  4.26279311e-03  -6.49010862e-03  -2.16033874e-03   1.37747079e+00
+  -6.92373775e-01   5.75471691e-06   3.96027416e-04  -2.35482804e-06]
+2015-12-05 06:56:38,764 average 50-fold MAE for alpha 1e-06 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9280904522 
+2015-12-05 06:56:38,764 try alpha = 0.0001
+2015-12-05 07:13:33,693 coef, [  4.26261853e-03  -6.49080691e-03  -2.15835416e-03   1.37621001e+00
+  -6.91628959e-01   5.75016057e-06   3.95280329e-04  -2.35503565e-06]
+2015-12-05 07:13:33,694 average 50-fold MAE for alpha 0.0001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.928128299 
+2015-12-05 07:13:33,694 try alpha = 0.0001
+2015-12-05 07:28:35,944 coef, [  4.26261918e-03  -6.49060866e-03  -2.15725098e-03   1.37622139e+00
+  -6.91635583e-01   5.75018585e-06   3.94850757e-04  -2.35513669e-06]
+2015-12-05 07:28:35,944 average 50-fold MAE for alpha 0.0001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9281278462 
+2015-12-05 07:28:35,944 try alpha = 0.0001
+2015-12-05 07:42:14,346 coef, [  4.26261989e-03  -6.49038837e-03  -2.15602522e-03   1.37623404e+00
+  -6.91642942e-01   5.75021394e-06   3.94373451e-04  -2.35524896e-06]
+2015-12-05 07:42:14,347 average 50-fold MAE for alpha 0.0001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.928127343 
+2015-12-05 07:42:14,347 try alpha = 0.0001
+2015-12-05 07:55:32,944 coef, [  4.26262203e-03  -6.48972751e-03  -2.15234797e-03   1.37627201e+00
+  -6.91665033e-01   5.75029830e-06   3.92941544e-04  -2.35558576e-06]
+2015-12-05 07:55:32,944 average 50-fold MAE for alpha 0.0001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9281258328 
+2015-12-05 07:55:32,944 try alpha = 0.0001
+2015-12-05 08:17:15,010 coef, [  4.26262418e-03  -6.48906661e-03  -2.14867080e-03   1.37631003e+00
+  -6.91687158e-01   5.75038285e-06   3.91509665e-04  -2.35592255e-06]
+2015-12-05 08:17:15,013 average 50-fold MAE for alpha 0.0001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9281243223 
+2015-12-05 08:17:15,014 try alpha = 0.001
+2015-12-05 08:35:02,898 coef, [  4.26104684e-03  -6.49693432e-03  -2.13960022e-03   1.36486550e+00
+  -6.84927075e-01   5.70915534e-06   3.88209078e-04  -2.35698645e-06]
+2015-12-05 08:35:02,899 average 50-fold MAE for alpha 0.001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9284710595 
+2015-12-05 08:35:02,899 try alpha = 0.001
+2015-12-05 08:48:45,692 coef, [  4.26105179e-03  -6.49495795e-03  -2.12855284e-03   1.36496869e+00
+  -6.84987024e-01   5.70936922e-06   3.83907482e-04  -2.35799840e-06]
+2015-12-05 08:48:45,693 average 50-fold MAE for alpha 0.001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9284668209 
+2015-12-05 08:48:45,693 try alpha = 0.001
+2015-12-05 09:01:58,203 coef, [  4.26105732e-03  -6.49276188e-03  -2.11627797e-03   1.36508352e+00
+  -6.85053726e-01   5.70960747e-06   3.79127924e-04  -2.35912279e-06]
+2015-12-05 09:01:58,206 average 50-fold MAE for alpha 0.001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9284621056 
+2015-12-05 09:01:58,206 try alpha = 0.001
+2015-12-05 09:13:52,197 coef, [  4.26107419e-03  -6.48617245e-03  -2.07945525e-03   1.36543010e+00
+  -6.85255084e-01   5.71032962e-06   3.64789959e-04  -2.36249583e-06]
+2015-12-05 09:13:52,198 average 50-fold MAE for alpha 0.001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9284479184 
+2015-12-05 09:13:52,198 try alpha = 0.001
+2015-12-05 09:24:52,284 coef, [  4.26109121e-03  -6.47958219e-03  -2.04263191e-03   1.36577789e+00
+  -6.85457152e-01   5.71105649e-06   3.50451751e-04  -2.36586908e-06]
+2015-12-05 09:24:52,284 average 50-fold MAE for alpha 0.001 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9284336787 

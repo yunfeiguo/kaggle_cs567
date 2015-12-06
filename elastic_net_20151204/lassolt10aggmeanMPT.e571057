@@ -1,0 +1,103 @@
+2015-12-04 21:48:56,341 started
+2015-12-04 21:49:26,117 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-12-04 21:56:56,023 preprocessing done
+./aggByMean_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 00:31:23,171 average 50-fold MAE for alpha 1e-10 l1_ratio 0.01 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.950181864 
+2015-12-05 00:31:23,172 coef: [  1.06104415e+00  -1.00452056e-01   1.35277979e+00  -6.79730763e-01
+   3.90679224e-06  -4.61724798e-04  -3.67403991e-06]
+2015-12-05 01:05:51,551 average 50-fold MAE for alpha 1e-10 l1_ratio 0.1 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.950181864 
+2015-12-05 01:05:51,552 coef: [  1.06104415e+00  -1.00452056e-01   1.35277979e+00  -6.79730763e-01
+   3.90679224e-06  -4.61724798e-04  -3.67403991e-06]
+2015-12-05 01:36:58,165 average 50-fold MAE for alpha 1e-10 l1_ratio 0.2 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.950181864 
+2015-12-05 01:36:58,166 coef: [  1.06104415e+00  -1.00452056e-01   1.35277979e+00  -6.79730763e-01
+   3.90679224e-06  -4.61724798e-04  -3.67403991e-06]
+2015-12-05 02:07:41,005 average 50-fold MAE for alpha 1e-10 l1_ratio 0.5 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.950181864 
+2015-12-05 02:07:41,006 coef: [  1.06104415e+00  -1.00452056e-01   1.35277979e+00  -6.79730764e-01
+   3.90679225e-06  -4.61724798e-04  -3.67403991e-06]
+2015-12-05 02:36:45,638 average 50-fold MAE for alpha 1e-10 l1_ratio 0.8 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.950181864 
+2015-12-05 02:36:45,641 coef: [  1.06104415e+00  -1.00452056e-01   1.35277979e+00  -6.79730764e-01
+   3.90679225e-06  -4.61724798e-04  -3.67403991e-06]
+2015-12-05 03:04:58,627 average 50-fold MAE for alpha 1e-08 l1_ratio 0.01 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501818709 
+2015-12-05 03:04:58,630 coef: [  1.06103809e+00  -1.00452228e-01   1.35277970e+00  -6.79730710e-01
+   3.90678441e-06  -4.61724716e-04  -3.67404099e-06]
+2015-12-05 03:29:33,972 average 50-fold MAE for alpha 1e-08 l1_ratio 0.1 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501818708 
+2015-12-05 03:29:33,973 coef: [  1.06103813e+00  -1.00452224e-01   1.35277970e+00  -6.79730710e-01
+   3.90678448e-06  -4.61724715e-04  -3.67404098e-06]
+2015-12-05 03:53:05,469 average 50-fold MAE for alpha 1e-08 l1_ratio 0.2 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501818708 
+2015-12-05 03:53:05,470 coef: [  1.06103819e+00  -1.00452220e-01   1.35277970e+00  -6.79730711e-01
+   3.90678455e-06  -4.61724714e-04  -3.67404097e-06]
+2015-12-05 04:15:24,370 average 50-fold MAE for alpha 1e-08 l1_ratio 0.5 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501818706 
+2015-12-05 04:15:24,371 coef: [  1.06103834e+00  -1.00452206e-01   1.35277970e+00  -6.79730712e-01
+   3.90678479e-06  -4.61724713e-04  -3.67404094e-06]
+2015-12-05 04:38:01,425 average 50-fold MAE for alpha 1e-08 l1_ratio 0.8 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501818705 
+2015-12-05 04:38:01,426 coef: [  1.06103849e+00  -1.00452193e-01   1.35277970e+00  -6.79730714e-01
+   3.90678502e-06  -4.61724711e-04  -3.67404091e-06]
+2015-12-05 05:01:33,998 average 50-fold MAE for alpha 1e-06 l1_ratio 0.01 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501825629 
+2015-12-05 05:01:33,999 coef: [  1.06043255e+00  -1.00469432e-01   1.35277077e+00  -6.79725318e-01
+   3.90600108e-06  -4.61716442e-04  -3.67414844e-06]
+2015-12-05 05:21:33,033 average 50-fold MAE for alpha 1e-06 l1_ratio 0.1 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.950182558 
+2015-12-05 05:21:33,033 coef: [  1.06043703e+00  -1.00469029e-01   1.35277085e+00  -6.79725366e-01
+   3.90600803e-06  -4.61716387e-04  -3.67414755e-06]
+2015-12-05 05:42:08,853 average 50-fold MAE for alpha 1e-06 l1_ratio 0.2 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501825525 
+2015-12-05 05:42:08,854 coef: [  1.06044201e+00  -1.00468583e-01   1.35277094e+00  -6.79725419e-01
+   3.90601576e-06  -4.61716326e-04  -3.67414657e-06]
+2015-12-05 06:00:40,101 average 50-fold MAE for alpha 1e-06 l1_ratio 0.5 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9501825363 
+2015-12-05 06:00:40,102 coef: [  1.06045696e+00  -1.00467242e-01   1.35277120e+00  -6.79725577e-01
+   3.90603895e-06  -4.61716142e-04  -3.67414361e-06]
+2015-12-05 06:19:18,003 average 50-fold MAE for alpha 1e-06 l1_ratio 0.8 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.95018252 
+2015-12-05 06:19:18,003 coef: [  1.06047192e+00  -1.00465901e-01   1.35277147e+00  -6.79725736e-01
+   3.90606214e-06  -4.61715958e-04  -3.67414066e-06]
+2015-12-05 06:36:29,820 average 50-fold MAE for alpha 0.0001 l1_ratio 0.01 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9502523259 
+2015-12-05 06:36:29,821 coef: [  1.00319157e+00  -1.02094236e-01   1.35185974e+00  -6.79176041e-01
+   3.83172527e-06  -4.60934690e-04  -3.68429074e-06]
+2015-12-05 06:51:24,139 average 50-fold MAE for alpha 0.0001 l1_ratio 0.1 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9502519945 
+2015-12-05 06:51:24,142 coef: [  1.00333149e+00  -1.02062915e-01   1.35186936e+00  -6.79181741e-01
+   3.83204303e-06  -4.60924925e-04  -3.68425828e-06]
+2015-12-05 07:06:21,369 average 50-fold MAE for alpha 0.0001 l1_ratio 0.2 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9502516257 
+2015-12-05 07:06:21,370 coef: [  1.00348861e+00  -1.02028066e-01   1.35188004e+00  -6.79188071e-01
+   3.83239815e-06  -4.60914099e-04  -3.68422191e-06]
+2015-12-05 07:19:33,864 average 50-fold MAE for alpha 0.0001 l1_ratio 0.5 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9502505154 
+2015-12-05 07:19:33,864 coef: [  1.00397074e+00  -1.01923193e-01   1.35191205e+00  -6.79207047e-01
+   3.83347686e-06  -4.60881769e-04  -3.68411081e-06]
+2015-12-05 07:31:36,802 average 50-fold MAE for alpha 0.0001 l1_ratio 0.8 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9502494002 
+2015-12-05 07:31:36,803 coef: [  1.00446965e+00  -1.01817817e-01   1.35194403e+00  -6.79226004e-01
+   3.83457639e-06  -4.60849673e-04  -3.68399662e-06]
+2015-12-05 07:46:02,267 average 50-fold MAE for alpha 0.001 l1_ratio 0.01 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9508352642 
+2015-12-05 07:46:02,268 coef: [  6.73412457e-01  -1.11369216e-01   1.34257046e+00  -6.73623818e-01
+   3.39000216e-06  -4.56448610e-04  -3.74183126e-06]
+2015-12-05 07:57:56,575 average 50-fold MAE for alpha 0.001 l1_ratio 0.1 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9508419557 
+2015-12-05 07:57:56,576 coef: [  6.63005715e-01  -1.11397233e-01   1.34272530e+00  -6.73713232e-01
+   3.37869809e-06  -4.56188529e-04  -3.74365531e-06]
+2015-12-05 08:08:50,755 average 50-fold MAE for alpha 0.001 l1_ratio 0.2 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9508502909 
+2015-12-05 08:08:50,756 coef: [  6.50567909e-01  -1.11453387e-01   1.34290264e+00  -6.73815535e-01
+   3.36506965e-06  -4.55887548e-04  -3.74584067e-06]
+2015-12-05 08:18:42,783 average 50-fold MAE for alpha 0.001 l1_ratio 0.5 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9508820832 
+2015-12-05 08:18:42,783 coef: [  6.06504549e-01  -1.11815213e-01   1.34347538e+00  -6.74145231e-01
+   3.31593898e-06  -4.54891951e-04  -3.75362166e-06]
+2015-12-05 08:28:59,241 average 50-fold MAE for alpha 0.001 l1_ratio 0.8 feature ['RhoHV', 'Zdr', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9509285106 
+2015-12-05 08:28:59,242 coef: [  5.48604957e-01  -1.12574074e-01   1.34413147e+00  -6.74521549e-01
+   3.24990259e-06  -4.53706340e-04  -3.76391527e-06]

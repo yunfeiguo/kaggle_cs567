@@ -38,3 +38,54 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 2015-11-22 22:04:44,701 start modeling
 2015-11-22 22:04:44,855 features: ['RhoHV', 'Zdr']
 2015-11-22 22:04:44,860 coef: [-0.          2.72451063]
+2015-12-05 16:05:16,802 started
+2015-12-05 16:05:42,905 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-12-05 16:10:24,985 preprocessing done
+./check_lasso_ae.py:102: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 16:18:17,473 started
+2015-12-05 16:18:43,826 reading done
+2015-12-05 16:23:25,807 preprocessing done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./check_stratify_ae.py:99: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 16:28:05,716 preprocessing done
+2015-12-05 16:28:05,716 start modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-05 16:28:20,573 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 16:28:20,573 coef: [ -1.89355378e-02   6.88167191e-02   1.39752008e+00  -7.02309910e-01
+   7.17616051e-06  -5.10557953e-04  -1.51797480e-06]
+2015-12-05 16:28:20,650 ae by group                              ae
+ExpectedCut                    
+(0, 10]           341016.743331
+(10, 100]         546835.765398
+(100, 1000000]  40408944.952333
+2015-12-05 16:39:27,488 start modeling for interval [0, 10]
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-05 16:39:42,157 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 16:39:42,158 coef: [ -1.73322488e-02   6.96755017e-02   1.39724017e+00  -7.02364793e-01
+   7.19436475e-06  -5.02857738e-04  -1.46996344e-06]
+2015-12-05 16:41:06,573 start modeling for interval [10, 100]
+2015-12-05 16:41:07,313 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 16:41:07,314 coef: [  2.01082554e-02  -1.23886482e-01  -1.92109693e+00   1.05175670e+00
+   1.56224301e-05   2.21571299e-03  -1.67932016e-04]
+2015-12-05 16:41:54,299 start modeling for interval [100, 100000]
+2015-12-05 16:41:54,416 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 16:41:54,417 coef: [  2.11812953e+02   3.83154589e+01  -2.17880389e+02   1.17539971e+02
+  -3.04220938e-02  -1.02836540e+00   1.07109532e-02]
+2015-12-05 16:41:54,459 ae by group                              ae
+ExpectedCut                    
+(0, 10]           364350.008009
+(10, 100]         309217.670100
+(100, 1000000]  29510529.449313

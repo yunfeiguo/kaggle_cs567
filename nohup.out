@@ -410,3 +410,122 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 2015-11-25 15:48:07,629 Prediction done
 2015-11-25 15:48:07,629 Gzipping...
 2015-11-25 15:48:08,728 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151125_lasso_newfeature_submission.csv.gz
+2015-12-05 12:52:18,113 started
+2015-12-05 12:52:49,895 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./20151204_submission_lasso_all_invidiual_feature.py:95: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 13:25:33,238 preprocessing done
+2015-12-05 13:25:33,239 start modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-05 13:26:22,493 features: ['minutes_past', 'radardist_km', 'Ref', 'Ref_5x5_10th', 'Ref_5x5_50th', 'Ref_5x5_90th', 'RefComposite', 'RefComposite_5x5_10th', 'RefComposite_5x5_50th', 'RefComposite_5x5_90th', 'RhoHV', 'RhoHV_5x5_10th', 'RhoHV_5x5_50th', 'RhoHV_5x5_90th', 'Zdr', 'Zdr_5x5_10th', 'Zdr_5x5_50th', 'Zdr_5x5_90th', 'Kdp', 'Kdp_5x5_10th', 'Kdp_5x5_50th', 'Kdp_5x5_90th', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 13:26:22,494 coef: [ -8.53969808e-03   7.91608723e-02  -5.28982413e-02  -5.44508476e-03
+   3.04470003e-02   5.27870500e-02  -6.63391318e-03  -4.53959533e-03
+  -2.25630745e-02   2.40838993e-02   2.17733026e-02  -1.79785192e-01
+  -1.55491830e-01   8.91189923e-01  -2.63811063e-02  -5.97072251e-02
+  -4.27683463e-03   6.49555309e-02  -2.07890261e-02   1.04028409e-01
+   2.16449994e-02  -4.76700969e-02   1.18465522e+00  -5.94846560e-01
+   7.32616808e-06   2.55648128e-04   3.82183844e-07]
+2015-12-05 13:26:23,365 Prediction done
+2015-12-05 13:26:23,365 Gzipping...
+2015-12-05 13:26:24,641 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151204_lasso_all_individual_feature_1e-6.csv.gz
+2015-12-05 13:43:21,893 started
+2015-12-05 13:43:53,123 reading done
+2015-12-05 13:49:06,521 started
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./20151205_submission_lasso_newfeature.py:95: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 13:49:38,577 reading done
+2015-12-05 13:51:11,431 started
+2015-12-05 13:51:44,396 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 14:16:26,438 preprocessing done
+2015-12-05 14:16:26,439 start modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-05 14:16:39,557 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 14:16:39,558 coef: [ -1.59729542e-02   6.82728161e-02   1.40367526e+00  -7.06768092e-01
+   6.84284844e-06  -4.12065203e-04  -1.75398060e-06]
+2015-12-05 14:16:40,310 Prediction done
+2015-12-05 14:16:40,311 Gzipping...
+2015-12-05 14:16:41,331 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151205_lasso_newfeature_1e-6.csv.gz
+Traceback (most recent call last):
+  File "./genNewFeature.py", line 120, in <module>
+    trainCleaned = transform(trainCleaned,True)
+  File "./genNewFeature.py", line 107, in transform
+    Expected = Expected['Expected']
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1914, in __getitem__
+    return self._getitem_column(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1921, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py", line 1090, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3102, in get
+    loc = self.items.get_loc(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/index.py", line 1692, in get_loc
+    return self._engine.get_loc(_values_from_object(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:3979)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3843)
+  File "pandas/hashtable.pyx", line 668, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12265)
+  File "pandas/hashtable.pyx", line 676, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12216)
+KeyError: 'Expected'
+Traceback (most recent call last):
+  File "./genNewFeature.py", line 121, in <module>
+    testData = transform(testData,True)
+  File "./genNewFeature.py", line 107, in transform
+    Expected = Expected['Expected']
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1914, in __getitem__
+    return self._getitem_column(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1921, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py", line 1090, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3102, in get
+    loc = self.items.get_loc(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/index.py", line 1692, in get_loc
+    return self._engine.get_loc(_values_from_object(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:3979)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3843)
+  File "pandas/hashtable.pyx", line 668, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12265)
+  File "pandas/hashtable.pyx", line 676, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12216)
+KeyError: 'Expected'
+2015-12-05 14:41:52,615 started
+2015-12-05 14:42:24,715 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 15:36:56,033 started
+2015-12-05 15:39:46,365 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)

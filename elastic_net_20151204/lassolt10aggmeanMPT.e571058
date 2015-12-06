@@ -1,0 +1,40 @@
+2015-12-04 21:53:55,997 started
+2015-12-04 21:54:23,998 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+2015-12-04 22:01:30,970 preprocessing done
+./aggByMean_lasso.v2.py:132: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['KdpXradardist_km'] = trainCleaned['Kdp']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:133: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RefXradardist_km'] = trainCleaned['Ref']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:134: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./aggByMean_lasso.v2.py:97: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 01:06:01,819 average 50-fold MAE for alpha 1e-10 l1_ratio 0.01 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9206261398 
+2015-12-05 01:06:01,820 coef: [ -4.85110835e-01  -2.69072615e+00   5.71455150e-01   1.43906953e+00
+  -7.26073633e-01   5.76003837e-06  -4.37787895e-04  -1.30833687e-06]
+2015-12-05 03:42:17,561 average 50-fold MAE for alpha 1e-10 l1_ratio 0.1 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9206261398 
+2015-12-05 03:42:17,562 coef: [ -4.85110838e-01  -2.69072616e+00   5.71455153e-01   1.43906953e+00
+  -7.26073634e-01   5.76003836e-06  -4.37787895e-04  -1.30833687e-06]
+2015-12-05 06:06:53,682 average 50-fold MAE for alpha 1e-10 l1_ratio 0.2 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9206261398 
+2015-12-05 06:06:53,683 coef: [ -4.85110840e-01  -2.69072618e+00   5.71455156e-01   1.43906953e+00
+  -7.26073634e-01   5.76003835e-06  -4.37787895e-04  -1.30833687e-06]
+2015-12-05 08:47:29,289 average 50-fold MAE for alpha 1e-10 l1_ratio 0.5 feature ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9206261398 
+2015-12-05 08:47:29,290 coef: [ -4.85110848e-01  -2.69072624e+00   5.71455164e-01   1.43906953e+00
+  -7.26073634e-01   5.76003832e-06  -4.37787895e-04  -1.30833686e-06]
