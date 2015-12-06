@@ -1,0 +1,16 @@
+2015-12-05 19:33:07,088 started
+2015-12-05 19:33:11,451 reading done
+2015-12-05 19:33:24,046 try feature Index([u'minutes_past', u'radardist_km', u'Ref', u'Ref_5x5_10th',
+       u'Ref_5x5_50th', u'Ref_5x5_90th', u'RefComposite',
+       u'RefComposite_5x5_10th', u'RefComposite_5x5_50th',
+       u'RefComposite_5x5_90th',
+       ...
+       u'RyzhkovZrnicXKdp', u'RyzhkovZrnicXKdp_5x5_10th',
+       u'RyzhkovZrnicXKdp_5x5_50th', u'RyzhkovZrnicXKdp_5x5_90th',
+       u'RyzhkovZrnicXExpected', u'RyzhkovZrnicXMarshallPalmer',
+       u'RyzhkovZrnicXKatsumata', u'RyzhkovZrnicXBrandes',
+       u'RyzhkovZrnicXSachidanazrnic', u'RyzhkovZrnicXRyzhkovZrnic'],
+      dtype='object', length=812)
+2015-12-05 19:33:24,046 try alpha = 0.001
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)

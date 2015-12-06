@@ -4,7 +4,7 @@ for $i(@ARGV) {
     open IN,'<',$i or die "open($i):$!\n";
     while(<IN>){
 	if (/]: \d+/) {
-	push @all,$_;
+	push @all,"$i,$_";
     }
     }
 }

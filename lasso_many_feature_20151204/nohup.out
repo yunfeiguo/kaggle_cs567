@@ -1,0 +1,6 @@
+2015-12-05 19:29:56,396 started
+usage: trymanyfeature.py [-h] -f F [F ...]
+trymanyfeature.py: error: argument -f is required
+2015-12-05 19:30:10,671 started
+usage: trymanyfeature.py [-h] -f F [F ...]
+trymanyfeature.py: error: argument -f is required

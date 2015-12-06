@@ -28,3 +28,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
   hour = hour.sort('minutes_past', ascending=True)
 2015-12-05 15:11:47,151 try feature ['RhoHV', 'Ref', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
 2015-12-05 15:11:47,151 try alpha = 1e-10
+2015-12-05 17:17:29,292 coef: [  3.71879686e-02   4.93749281e-01   9.95532175e-01  -4.92407204e-01
+   4.45943841e-06  -4.16315661e-04  -3.26913396e-06]
+2015-12-05 17:17:29,295 aggByMean, average 50-fold MAE for alpha 1e-10 feature ['RhoHV', 'Ref', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9503188745 
+2015-12-05 17:17:29,295 try alpha = 1e-08

@@ -529,3 +529,49 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
   self._update_inplace(new_data)
 ./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
   hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 17:31:28,482 Output done
+2015-12-05 17:35:59,204 started
+2015-12-05 17:35:59,545 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 17:36:18,237 Output done
+2015-12-05 17:48:53,846 started
+2015-12-05 17:49:25,998 reading done
+2015-12-05 17:50:17,821 started
+2015-12-05 17:50:49,663 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./20151205_submission_elasticNet_newfeature.py:113: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+./20151205_submission_elasticNet_newfeature.py:95: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./genNewFeature.py:98: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-05 18:22:57,095 preprocessing done
+2015-12-05 18:22:57,096 start modeling
+2015-12-05 18:24:11,633 Output done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-05 18:25:28,716 features: ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-05 18:25:28,717 coef: [ -2.68856784e+00   5.68263222e-01  -4.81911306e-01   1.44000258e+00
+  -7.26717472e-01   5.75018058e-06  -4.35994414e-04  -1.33953796e-06]
+2015-12-05 18:25:29,514 Prediction done
+2015-12-05 18:25:29,515 Gzipping...
+2015-12-05 18:25:30,567 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151205_elasticnet_newfeature_1e-6.csv.gz

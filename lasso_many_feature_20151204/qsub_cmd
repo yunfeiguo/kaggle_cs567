@@ -1,35 +1,5 @@
-echo ./aggBySum_lasso.v2.py -f minutes_past radardist_km Ref Ref_5x5_10th Ref_5x5_50th Ref_5x5_90th RefComposite RefComposite_5x5_10th RefComposite_5x5_50th RefComposite_5x5_90th RhoHV RhoHV_5x5_10th RhoHV_5x5_50th RhoHV_5x5_90th Zdr Zdr_5x5_10th Zdr_5x5_50th Zdr_5x5_90th Kdp Kdp_5x5_10th Kdp_5x5_50th Kdp_5x5_90th RhoHVXradardist_km RefXradardist_km KdpXradardist_km | qsub -V -cwd -pe smp 6 -l h_vmem=20g -S /bin/bash -N lassolt10aggsum
-echo ./aggBySum_lasso.v2.py -f minutes_past radardist_km Ref Ref_5x5_10th Ref_5x5_50th Ref_5x5_90th RefComposite RefComposite_5x5_10th RefComposite_5x5_50th RefComposite_5x5_90th RhoHV RhoHV_5x5_10th RhoHV_5x5_50th RhoHV_5x5_90th Zdr Zdr_5x5_10th Zdr_5x5_50th Zdr_5x5_90th Kdp Kdp_5x5_10th Kdp_5x5_50th Kdp_5x5_90th  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic RhoHVXradardist_km RefXradardist_km KdpXradardist_km | qsub -V -cwd -pe smp 6 -l h_vmem=20g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggByMean_lasso.v2.py -f minutes_past radardist_km Ref Ref_5x5_10th Ref_5x5_50th Ref_5x5_90th RefComposite RefComposite_5x5_10th RefComposite_5x5_50th RefComposite_5x5_90th RhoHV RhoHV_5x5_10th RhoHV_5x5_50th RhoHV_5x5_90th Zdr Zdr_5x5_10th Zdr_5x5_50th Zdr_5x5_90th Kdp Kdp_5x5_10th Kdp_5x5_50th Kdp_5x5_90th  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic RhoHVXradardist_km RefXradardist_km KdpXradardist_km | qsub -V -cwd -pe smp 6 -l h_vmem=20g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f minutes_past radardist_km Ref Ref_5x5_10th Ref_5x5_50th Ref_5x5_90th RefComposite RefComposite_5x5_10th RefComposite_5x5_50th RefComposite_5x5_90th RhoHV RhoHV_5x5_10th RhoHV_5x5_50th RhoHV_5x5_90th Zdr Zdr_5x5_10th Zdr_5x5_50th Zdr_5x5_90th Kdp Kdp_5x5_10th Kdp_5x5_50th Kdp_5x5_90th RhoHVXradardist_km RefXradardist_km KdpXradardist_km | qsub -V -cwd -pe smp 6 -l h_vmem=20g -S /bin/bash -N lassolt10aggmeanT
-
-echo ./aggBySum_lasso.v2.py -f RhoHV  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f RhoHV Ref  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f RhoHV Zdr  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f RhoHV RhoHVXradardist_km radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f Ref Kdp  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f Ref RefXradardist_km radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f Zdr radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f Kdp radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f KdpXradardist_km Kdp radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f Kdp Zdr radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-echo ./aggBySum_lasso.v2.py -f minutes_past radardist_km Ref RefComposite RhoHV Zdr Kdp  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggsumMP
-
-
-echo ./aggByMean_lasso.v2.py -f RhoHV  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f RhoHV Ref  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f RhoHV Zdr  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f RhoHV RhoHVXradardist_km radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f Ref Kdp  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f Ref RefXradardist_km radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f Zdr radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f Kdp radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f KdpXradardist_km Kdp radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f Kdp Zdr radardist_km  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f minutes_past radardist_km Ref RefComposite RhoHV Zdr Kdp  MarshallPalmer Katsumata Brandes Sachidanazrnic RyzhkovZrnic | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-
-echo ./aggByMean_lasso.v2.py -f 0.001| qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f 0.0001| qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f 0.00001| qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f 0.00001| qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
-echo ./aggByMean_lasso.v2.py -f 0.000001| qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmeanMPT
+echo ./trymanyfeature.py -f 0.001 | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmean
+echo ./trymanyfeature.py -f 0.0001 | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmean
+echo ./trymanyfeature.py -f 0.00001 | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmean
+echo ./trymanyfeature.py -f 0.000001 | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmean
+echo ./trymanyfeature.py -f 0.0000001 | qsub -V -cwd -pe smp 6 -l h_vmem=6g -S /bin/bash -N lassolt10aggmean

@@ -32,3 +32,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
   -7.05600897e-01   7.44769700e-06   4.27853465e-04  -1.45022489e-06]
 2015-12-05 16:21:54,560 aggByMean, average 50-fold MAE for alpha 1e-10 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9231556832 
 2015-12-05 16:21:54,560 try alpha = 1e-08
+2015-12-05 17:18:46,758 coef: [  6.83908409e-02  -1.70960936e-02  -2.83727649e-02   1.40203202e+00
+  -7.05600829e-01   7.44769679e-06   4.27846924e-04  -1.45022743e-06]
+2015-12-05 17:18:46,764 aggByMean, average 50-fold MAE for alpha 1e-08 feature ['Kdp', 'Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']: 19.9231556868 
+2015-12-05 17:18:46,764 try alpha = 1e-06

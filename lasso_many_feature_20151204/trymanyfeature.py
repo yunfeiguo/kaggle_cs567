@@ -18,6 +18,7 @@ logging.warning('started')
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f',nargs='+',required=True)
+parser.add_argument('-l',nargs='+',required=True)
 args = parser.parse_args()
 
 
@@ -25,14 +26,14 @@ args = parser.parse_args()
 #fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train.csv'
 #fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train_100000.csv'
 #fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggsum_cleaned_smalltrain.csv'
-fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggsum_cleaned_train.csv'
+fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_train.csv'
+#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_smalltrain.csv'
 #fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/smalltest.v2.csv'
 trainCleaned=pd.read_csv(fn_train,sep=',',index_col='Id')
 logging.warning('reading done')
 
-def runModel(i,featureCombo):
+def runModel(i,j,featureCombo):
     mae = np.array([])   
-    logging.warning('try alpha = %s' % i)
     coef = None
     for ktrain,ktest in kf:
         #x = trainCleaned.iloc[ktrain,]
@@ -47,12 +48,13 @@ def runModel(i,featureCombo):
 	out2 = trainCleaned.iloc[ktest,np.in1d(trainCleaned.columns,'Expected')]
 	predictor = predictor[out.Expected < 10]
 	out = out[out.Expected < 10]
-        model = linear_model.Lasso(alpha = i)
+        #model = linear_model.Lasso(alpha = i)
+        model = linear_model.SGDRegressor(learning_rate='optimal',loss=j,alpha = i)
         model.fit(predictor,out)
 	mae = np.append(mae,getMAE(model.predict(predictor2),out2.Expected))
 	coef = model.coef_
     logging.warning('coef: %s' % coef)
-    logging.warning('average 50-fold MAE for alpha %s feature %s: %s ' % (i,featureCombo,mae.mean()))
+    logging.warning('loss %s average 50-fold MAE for alpha %s feature %s: %s ' % (j,i,featureCombo,mae.mean()))
 
 #add interactions
 cols = trainCleaned.columns
@@ -71,7 +73,6 @@ featureCombo = trainCleaned.columns
 logging.warning('try feature %s' % featureCombo)
 allMAE = []
 jobs = []
-#for i in [0.001,0.1,0.5,1,2,4,8,12,20]:
-#for i in [1e-10,1e-8,1e-6,1e-4,1e-3]:
 for i in args.f:
-    runModel(float(i),featureCombo)
+    for j in args.l:
+        runModel(float(i),j,featureCombo)

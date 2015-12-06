@@ -16,14 +16,11 @@ logging.basicConfig(format='%(asctime)s %(message)s')
 logging.warning('started')
 
 #reading in training data
-#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train_100000.csv'
-#fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/smalltest.v2.csv'
-#fn_out_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggsum_cleaned_smalltrain.csv'
-#fn_out_test='/home/yunfeiguo/projects/kaggle_cs567/data/aggsum_cleaned_smalltest.csv'
-fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train.csv'
-fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/test.csv'
-fn_out_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_train.csv'
-fn_out_test='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_test.csv'
+#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train.csv'
+#fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/test.csv'
+fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train_100000.csv'
+fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/smalltest.v2.csv'
+fn_out='test.csv'
 trainData=pd.read_csv(fn_train,sep=',',index_col='Id')
 testData=pd.read_csv(fn_test,sep=',',index_col='Id')
 #trainData=dd.read_csv(fn_train,sep=',')
@@ -98,24 +95,47 @@ def benchmarkFunc(hour):
     hour = hour.sort('minutes_past', ascending=True)
     est = pd.Series(meterological_est(hour['Ref'], hour['Zdr'], hour['Kdp'], hour['minutes_past']))
     return est
+#MP must be calculated using unaggregated data
 def transform (df,hasExpected):
-    MP = df.groupby(df.index).apply(benchmarkFunc)
+    groupedDF = df.groupby(df.index)
+    from multiprocessing import Pool,cpu_count
+    pool = Pool(processes = 6)
+    ret_list = pool.map(benchmarkFunc,[group for name, group in groupedDF])
+    MP = pd.DataFrame(np.matrix(ret_list),index = df.index)
+    #MP = df.groupby(df.index).apply(benchmarkFunc)
     MP.columns = ['MarshallPalmer','Katsumata','Brandes','Sachidanazrnic','RyzhkovZrnic']
     Expected = None
     if hasExpected:
-       Expected = df.groupby(df.index).agg(np.mean)
-       Expected = Expected['Expected']
+        Expected = df.groupby(df.index).agg(np.mean)
+        Expected = Expected['Expected']
     #trainCleaned = trainCleaned.groupby(trainCleaned.index).agg(np.sum)
     df = df.groupby(df.index).agg(np.mean)
-    #df = df.groupby(df.index).agg(np.sum)
     if hasExpected:
         df['Expected'] = Expected
-        df = df.join(MP)
+    df = df.join(MP)
     return(df)
 
-trainCleaned = transform(trainCleaned,True)
-testData = transform(testData,False)
-
-trainCleaned.to_csv(fn_out_train)
-testData.to_csv(fn_out_test)
-logging.warning('Output done')
+trainCleaned['RhoHVXradardist_km'] = trainCleaned['RhoHV']*trainCleaned['radardist_km']
+testData['RhoHVXradardist_km'] = testData['RhoHV']*testData['radardist_km']
+x = transform(trainCleaned,True)
+x = x[x['Expected'] < 10]
+y = transform(testData,False)
+logging.warning('preprocessing done')
+logging.warning('start modeling')
+featureCombo = ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+alpha = 1e-6
+l1ratio = 0.5
+#xModel = linear_model.Lasso(alpha)
+xModel = linear_model.ElasticNet(alpha = alpha,l1_ratio=l1ratio,max_iter = 10000)
+xModel.fit(x[featureCombo],x['Expected'])
+logging.warning('features: '+str(featureCombo))
+logging.warning('coef: '+str(xModel.coef_))
+z = pd.DataFrame(xModel.predict(y[featureCombo]),index=y.index)
+#z = xModel.predict(y[featureCombo])
+z.columns = ['Expected']
+z[z<0] = 0 #remove negative prediction
+z.to_csv(fn_out)
+logging.warning('Prediction done')
+logging.warning('Gzipping...')
+os.system('gzip -f '+fn_out)
+logging.warning('Output written to '+fn_out+'.gz')
