@@ -1,0 +1,12 @@
+*Usage
+
+	#please run the following script for
+	#data processing, CV and prediction 
+	#all tests pass on Linux 2.6.32-431.11.2.el6.x86_64 GNU/Linux
+	./runDemo.sh
+
+*Instruction for modification
+
+Only a portion of the training data is used for testing. If a different data set is used,
+please change file names within each script accordingly. Parameters in each script might 
+differ from we used in practice to increase speed.
