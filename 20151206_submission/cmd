@@ -1,0 +1,2 @@
+#echo ./20151206_submission_manyfeature.py | qsub -V -cwd -l h_vmem=78g -m ea -M guoyunfei1989@gmail.com -S /bin/bash -N mfeature
+echo ./20151206_submission_mixtureregression.py | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -S /bin/bash -N mixtureK5

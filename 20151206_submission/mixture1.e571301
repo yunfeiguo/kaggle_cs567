@@ -1,0 +1,12 @@
+2015-12-06 16:03:41,399 started
+2015-12-06 16:03:45,396 reading done
+2015-12-06 16:03:45,396 start classification
+2015-12-06 16:30:46,588 start regression modeling
+2015-12-06 16:32:41,725 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic', 'ZdrXpredict_class_exp', 'radardist_kmXpredict_class_exp', 'MarshallPalmerXpredict_class_exp', 'KatsumataXpredict_class_exp', 'BrandesXpredict_class_exp', 'SachidanazrnicXpredict_class_exp', 'RyzhkovZrnicXpredict_class_exp', 'predict_class_exp']
+2015-12-06 16:32:41,726 coef: [  2.93166978e+00   5.28291370e-01   5.44604576e-01  -9.19425720e-02
+   2.13790967e-05   2.50632692e-03  -1.34502831e-04   1.35213960e+02
+   5.44737072e+01  -1.19333670e+02   6.95204865e+01  -2.84131489e-02
+  -1.48243893e+00   1.36767669e-02   2.07371567e+02]
+2015-12-06 16:32:42,696 Prediction done
+2015-12-06 16:32:42,696 Gzipping...
+2015-12-06 16:32:43,995 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151206_mixture_knn_k5_p2_alpha1e-6.csv.gz

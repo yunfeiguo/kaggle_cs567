@@ -1,0 +1,39 @@
+2015-12-05 23:07:23,104 started
+2015-12-05 23:07:28,176 reading done
+2015-12-05 23:07:43,665 try feature Index([u'minutes_past', u'radardist_km', u'Ref', u'Ref_5x5_10th',
+       u'Ref_5x5_50th', u'Ref_5x5_90th', u'RefComposite',
+       u'RefComposite_5x5_10th', u'RefComposite_5x5_50th',
+       u'RefComposite_5x5_90th',
+       ...
+       u'RyzhkovZrnicXKdp', u'RyzhkovZrnicXKdp_5x5_10th',
+       u'RyzhkovZrnicXKdp_5x5_50th', u'RyzhkovZrnicXKdp_5x5_90th',
+       u'RyzhkovZrnicXExpected', u'RyzhkovZrnicXMarshallPalmer',
+       u'RyzhkovZrnicXKatsumata', u'RyzhkovZrnicXBrandes',
+       u'RyzhkovZrnicXSachidanazrnic', u'RyzhkovZrnicXRyzhkovZrnic'],
+      dtype='object', length=812)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py:449: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py:449: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py:449: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Traceback (most recent call last):
+  File "./trymanyfeature.py", line 78, in <module>
+    runModel(float(i),j,featureCombo)
+  File "./trymanyfeature.py", line 49, in runModel
+    predictor = predictor[out.Expected < 10]
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1908, in __getitem__
+    return self._getitem_array(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1950, in _getitem_array
+    return self.take(indexer, axis=0, convert=False)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py", line 1370, in take
+    convert=True, verify=True)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3517, in take
+    axis=axis, allow_dups=True)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3404, in reindex_indexer
+    for blk in self.blocks]
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 935, in take_nd
+    allow_fill=True, fill_value=fill_value)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/common.py", line 779, in take_nd
+    out = np.empty(out_shape, dtype=dtype)
+MemoryError

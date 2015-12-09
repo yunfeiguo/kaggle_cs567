@@ -1,0 +1,10 @@
+losshinge mean error rate 50-fold CV: 70.7601631485%
+losshinge mean class1 error rate 50-fold CV: 30.7174532784%
+losslog mean error rate 50-fold CV: 71.5161700845%
+losslog mean class1 error rate 50-fold CV: 27.367754197%
+lossmodified_huber mean error rate 50-fold CV: 58.8493368914%
+lossmodified_huber mean class1 error rate 50-fold CV: 35.6746911625%
+losssquared_hinge mean error rate 50-fold CV: 45.4000168381%
+losssquared_hinge mean class1 error rate 50-fold CV: 46.90370605%
+lossperceptron mean error rate 50-fold CV: 59.4066233405%
+lossperceptron mean class1 error rate 50-fold CV: 39.6420652518%

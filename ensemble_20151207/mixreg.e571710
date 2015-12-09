@@ -1,0 +1,11 @@
+2015-12-07 04:19:03,969 started
+2015-12-07 04:19:08,013 reading done
+2015-12-07 04:32:12,633 start regression modeling
+2015-12-07 04:32:12,748 start regression modeling
+2015-12-07 04:33:26,459 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic', 'ZdrXpredict_class_exp', 'radardist_kmXpredict_class_exp', 'MarshallPalmerXpredict_class_exp', 'KatsumataXpredict_class_exp', 'BrandesXpredict_class_exp', 'SachidanazrnicXpredict_class_exp', 'RyzhkovZrnicXpredict_class_exp', 'predict_class_exp']
+2015-12-07 04:33:26,460 coef: [  5.55839069e-02   1.85000099e-01   2.32164964e+00  -1.04412524e+00
+   1.61477552e-05   3.38724448e-04  -1.91849788e-05   1.97268146e+02
+   3.46363463e+01  -2.03940106e+02   1.09310852e+02  -3.08476599e-02
+  -1.35955591e+00   3.53440379e-03   5.61020219e+02]
+2015-12-07 04:33:27,426 Prediction done
+2015-12-07 04:33:28,445 Prediction done

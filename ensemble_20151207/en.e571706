@@ -1,0 +1,11 @@
+2015-12-07 03:25:03,859 started
+2015-12-07 03:25:07,381 reading done
+2015-12-07 03:25:07,472 preprocessing done
+2015-12-07 03:25:07,472 start modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:466: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-07 03:28:19,389 features: ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-07 03:28:19,390 coef: [ -2.68856784e+00   5.68263222e-01  -4.81911306e-01   1.44000258e+00
+  -7.26717472e-01   5.75018058e-06  -4.35994414e-04  -1.33953796e-06]
+2015-12-07 03:28:20,198 Prediction done
+2015-12-07 03:28:20,946 Prediction done

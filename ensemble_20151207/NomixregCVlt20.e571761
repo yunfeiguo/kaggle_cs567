@@ -1,0 +1,17 @@
+2015-12-07 10:44:04,637 started
+2015-12-07 10:44:08,119 reading done
+2015-12-07 10:44:08,123 try feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:466: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-07 13:32:39,996 coef: [ 0.10484174  0.0391791  -0.39602712  0.523668   -0.0027875   0.04737348
+  1.16923117  0.00166899]
+2015-12-07 13:32:39,996 average 50-fold MAE for alpha 1e-05 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']: 18.8968747514 
+2015-12-07 14:10:02,367 coef: [ 0.10455814  0.04028311 -0.39335685  0.52228793 -0.0027294   0.04553323
+  1.16915329  0.00166919]
+2015-12-07 14:10:02,368 average 50-fold MAE for alpha 0.0001 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']: 18.8967498063 
+2015-12-07 14:20:44,751 coef: [ 0.10172285  0.04937922 -0.36673616  0.50848395 -0.00215244  0.02912304
+  1.16837454  0.00167124]
+2015-12-07 14:20:44,751 average 50-fold MAE for alpha 0.001 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']: 18.8963239273 
+2015-12-07 14:25:07,489 coef: [ 0.0755151   0.01053315 -0.11201646  0.3720449   0.00291765  0.
+  1.16048454  0.00169083]
+2015-12-07 14:25:07,489 average 50-fold MAE for alpha 0.01 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']: 18.8968059187 

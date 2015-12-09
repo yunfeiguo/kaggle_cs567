@@ -1,0 +1,5 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+total class_exp=1:12628
+error rate:0.00211612451906
+total class_exp=1 predicted wrong:1368

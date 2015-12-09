@@ -2,3 +2,91 @@
 2015-12-05 22:13:05,968 reading done
 2015-12-05 22:14:00,565 start regression modeling
 2015-12-05 22:14:00,566 try alpha = 1e-06
+2015-12-06 00:08:50,904 coef: [  2.20856206e-02  -1.56399403e-01   1.38673246e+00  -6.89135089e-01
+   6.66224707e-06   5.21250233e-04  -2.73825398e-06   3.29197870e+00
+  -5.01187493e-02   4.26391399e-02   1.90153711e+00  -1.08472164e+00
+  -4.92067287e-05  -1.78075869e-04  -3.12793077e-04]
+2015-12-06 00:08:50,907 aggByMean, average 50-fold MAE for alpha 1e-06 feature ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic', 'ZdrXpredict_class_exp', 'radardist_kmXpredict_class_exp', 'MarshallPalmerXpredict_class_exp', 'KatsumataXpredict_class_exp', 'BrandesXpredict_class_exp', 'SachidanazrnicXpredict_class_exp', 'RyzhkovZrnicXpredict_class_exp', 'predict_class_exp']: 19.3207680336 
+total class_exp=1:12628
+error rate:0.119252069488
+total class_exp=1 predicted wrong:62
+2015-12-06 12:14:10,618 started
+2015-12-06 12:14:13,718 reading done
+losshinge mean error rate 50-fold CV: 49.0639686997%
+losshinge mean class1 error rate 50-fold CV: 51.3145391194%
+losslog mean error rate 50-fold CV: 53.5771043314%
+losslog mean class1 error rate 50-fold CV: 46.8165980361%
+Traceback (most recent call last):
+  File "./classify_only.py", line 61, in <module>
+    model.fit(ktrainData[classification_featureCombo],ktrainData['class_exp'])
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/stochastic_gradient.py", line 564, in fit
+    sample_weight=sample_weight)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/stochastic_gradient.py", line 403, in _fit
+    X, y = check_X_y(X, y, 'csr', dtype=np.float64, order="C")
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py", line 444, in check_X_y
+    ensure_min_features)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py", line 344, in check_array
+    array = np.array(array, dtype=dtype, order=order, copy=copy)
+KeyboardInterrupt
+2015-12-06 12:38:31,813 started
+2015-12-06 12:38:34,831 reading done
+Traceback (most recent call last):
+  File "./classify_only.py", line 88, in <module>
+    prediction = model.predict(ktestData[classification_featureCombo])
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/neighbors/classification.py", line 138, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/neighbors/base.py", line 374, in kneighbors
+    return_distance=return_distance)
+KeyboardInterrupt
+2015-12-06 12:44:52,040 started
+2015-12-06 12:44:55,069 reading done
+Traceback (most recent call last):
+  File "./classify_only.py", line 88, in <module>
+    prediction = model.predict(ktestData[classification_featureCombo])
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/neighbors/classification.py", line 138, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/neighbors/base.py", line 374, in kneighbors
+    return_distance=return_distance)
+KeyboardInterrupt
+2015-12-06 12:47:02,116 started
+2015-12-06 12:47:05,175 reading done
+Traceback (most recent call last):
+  File "./classify_only.py", line 87, in <module>
+    model.fit(ktrainData[classification_featureCombo],ktrainData['class_exp'])
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/neighbors/base.py", line 769, in fit
+    return self._fit(X)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/neighbors/base.py", line 255, in _fit
+    **self.effective_metric_params_)
+  File "binary_tree.pxi", line 1054, in sklearn.neighbors.kd_tree.BinaryTree.__init__ (sklearn/neighbors/kd_tree.c:8401)
+  File "dist_metrics.pyx", line 280, in sklearn.neighbors.dist_metrics.DistanceMetric.get_metric (sklearn/neighbors/dist_metrics.c:4066)
+TypeError: __init__() got an unexpected keyword argument 'n_jobs'
+2015-12-06 12:59:51,691 started
+2015-12-06 12:59:54,753 reading done
+K2 mean error rate 50-fold CV: 2.99012072417%
+K2 mean class1 error rate 50-fold CV: 93.1818181818%
+K4 mean error rate 50-fold CV: 2.76320566138%
+K4 mean class1 error rate 50-fold CV: 96.7453278429%
+K6 mean error rate 50-fold CV: 2.1678631162%
+K6 mean class1 error rate 50-fold CV: 98.1548938866%
+K20 mean error rate 50-fold CV: 1.84505234337%
+K20 mean class1 error rate 50-fold CV: 99.8178650618%
+Traceback (most recent call last):
+  File "./classify_only.py", line 10, in <module>
+    from pylab import *
+  File "/home/yunfeiguo/.local/lib/python2.7/site-packages/matplotlib-1.3.1-py2.7-linux-x86_64.egg/pylab.py", line 1, in <module>
+    from matplotlib.pylab import *
+  File "/home/yunfeiguo/.local/lib/python2.7/site-packages/matplotlib-1.3.1-py2.7-linux-x86_64.egg/matplotlib/pylab.py", line 269, in <module>
+    from matplotlib.pyplot import *
+  File "/home/yunfeiguo/.local/lib/python2.7/site-packages/matplotlib-1.3.1-py2.7-linux-x86_64.egg/matplotlib/pyplot.py", line 17, in <module>
+    """
+KeyboardInterrupt
+2015-12-06 15:28:23,901 started
+2015-12-06 15:28:26,980 reading done
+p 1 K5 mean error rate 50-fold CV: 2.78797948%
+p 1 K5 mean class1 error rate 50-fold CV: 96.9987329743%
+p 2 K5 mean error rate 50-fold CV: 2.79861839804%
+p 2 K5 mean class1 error rate 50-fold CV: 97.434273044%
+p 3 K5 mean error rate 50-fold CV: 2.79278885391%
+p 3 K5 mean class1 error rate 50-fold CV: 97.2679759265%
+p 5 K5 mean error rate 50-fold CV: 2.78244141308%
+p 5 K5 mean class1 error rate 50-fold CV: 97.3075704783%

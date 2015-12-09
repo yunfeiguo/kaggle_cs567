@@ -1,0 +1,9 @@
+2015-12-07 03:56:33,364 started
+2015-12-07 03:56:37,393 reading done
+2015-12-07 03:56:37,491 preprocessing done
+2015-12-07 03:56:37,491 start modeling
+2015-12-07 04:00:29,992 features: ['RhoHV', 'RhoHVXradardist_km', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-07 04:00:29,993 coef: [ -2.68857490e+00   5.68265099e-01  -4.81913132e-01   1.44000269e+00
+  -7.26717533e-01   5.75017830e-06  -4.35994510e-04  -1.33953674e-06]
+2015-12-07 04:00:30,908 Prediction done
+2015-12-07 04:00:31,762 Prediction done

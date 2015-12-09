@@ -1,0 +1,9 @@
+#echo ./20151207_lasso_newfeature.py | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N lasso2
+#echo ./20151207_elasticnet_newfeature.py | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N en2
+#echo ./20151207_mixturereg.py | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N mixreg
+echo /home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py  -f 10 | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N noNonParamCVlt10
+echo /home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py -f 8 | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N noNonParamCVlt8
+echo /home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py -f 20 | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N noNonParamCVlt20
+echo /home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py -f 50 | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N noNonParamCVlt50
+echo /home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py -f 15 | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N noNonParamCVlt15
+echo /home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py -f 12.5 | qsub -V -cwd -l h_vmem=40g -m ea -M guoyunfei1989@gmail.com -N noNonParamCVlt12_5

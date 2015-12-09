@@ -1,0 +1,1 @@
+echo ./classify_only.py | qsub -V -cwd -pe smp 12 -l h_vmem=7g -N sgd3 -m ea -M guoyunfei1989@gmail.com

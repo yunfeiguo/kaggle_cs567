@@ -1,0 +1,12 @@
+#!/usr/bin/env perl
+
+for $a(1,0.1,0.01,0.001) {
+    for $k(2,3,5,20,100) {
+	for $p(1,2,3,4) {
+	    for $w('uniform','distance') {
+		!system("echo ./20151206_submission_mixtureregression.py -a $a -k $k -p $p -w $w | qsub -V -cwd -l h_vmem=20g -N try$a.$k.$p.$w ") or die "$!\n";
+	    }
+	}
+    }
+}
+#./20151206_submission_mixtureregression.py -a 0.001 -k 5 -p 1 -w uniform

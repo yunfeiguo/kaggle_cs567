@@ -18,7 +18,7 @@ logging.warning('started')
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f',nargs='+',required=True)
-parser.add_argument('-l',nargs='+',required=True)
+#parser.add_argument('-l',nargs='+',required=True)
 args = parser.parse_args()
 
 
@@ -26,13 +26,14 @@ args = parser.parse_args()
 #fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train.csv'
 #fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/train_100000.csv'
 #fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggsum_cleaned_smalltrain.csv'
-fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_train.csv'
-#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_smalltrain.csv'
+#fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_train.v2.csv'
+fn_train='/home/yunfeiguo/projects/kaggle_cs567/data/aggmean_cleaned_smalltrain.csv'
 #fn_test='/home/yunfeiguo/projects/kaggle_cs567/data/smalltest.v2.csv'
 trainCleaned=pd.read_csv(fn_train,sep=',',index_col='Id')
 logging.warning('reading done')
 
-def runModel(i,j,featureCombo):
+#def runModel(i,j,featureCombo):
+def runModel(i,featureCombo):
     mae = np.array([])   
     coef = None
     for ktrain,ktest in kf:
@@ -48,31 +49,32 @@ def runModel(i,j,featureCombo):
 	out2 = trainCleaned.iloc[ktest,np.in1d(trainCleaned.columns,'Expected')]
 	predictor = predictor[out.Expected < 10]
 	out = out[out.Expected < 10]
-        #model = linear_model.Lasso(alpha = i)
-        model = linear_model.SGDRegressor(learning_rate='optimal',loss=j,alpha = i)
+        model = linear_model.Lasso(alpha = i,max_iter=10000,warm_start=True)
+        #model = linear_model.SGDRegressor(learning_rate='optimal',loss=j,alpha = i,n_iter=50,epsilon=5)
         model.fit(predictor,out)
 	mae = np.append(mae,getMAE(model.predict(predictor2),out2.Expected))
 	coef = model.coef_
     logging.warning('coef: %s' % coef)
-    logging.warning('loss %s average 50-fold MAE for alpha %s feature %s: %s ' % (j,i,featureCombo,mae.mean()))
+    #logging.warning('loss %s average 50-fold MAE for alpha %s feature %s: %s ' % (j,i,featureCombo,mae.mean()))
+    logging.warning('average 50-fold MAE for alpha %s feature %s: %s ' % (i,featureCombo,mae.mean()))
 
 #add interactions
 cols = trainCleaned.columns
-for i in cols:
-    for j in cols:
-        trainCleaned[str(i+'X'+j)] = trainCleaned[i]*trainCleaned[j]
+for i in range(len(cols)):
+    for j in range(i,len(cols)):
+	newFeature = str(cols[i]+'X'+cols[j])
+        trainCleaned[newFeature] = trainCleaned[cols[i]]*trainCleaned[cols[j]]
 #add square terms
 #add log terms
 #add inverse
 #add 
 
 kf = KFold(trainCleaned.shape[0],n_folds=50,shuffle=True)
-#for featureCombo in [['RhoHV'],['RhoHV','Ref'],['RhoHV','Zdr'],['Ref','Kdp'],['Zdr','radardist_km'],['Kdp','radardist_km'],['KdpXradardist_km','Kdp','radardist_km'],['Kdp','Zdr','radardist_km']]:	
-#for featureCombo in [args.f]:	
 featureCombo = trainCleaned.columns
 logging.warning('try feature %s' % featureCombo)
 allMAE = []
 jobs = []
 for i in args.f:
-    for j in args.l:
-        runModel(float(i),j,featureCombo)
+    #for j in args.l:
+        #runModel(float(i),j,featureCombo)
+    runModel(float(i),featureCombo)

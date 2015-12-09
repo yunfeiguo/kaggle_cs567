@@ -1,0 +1,67 @@
+2015-12-06 15:37:11,347 started
+2015-12-06 15:37:15,325 reading done
+2015-12-06 15:37:15,999 start regression modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:466: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-06 16:13:50,189 features: Index([u'minutes_past', u'radardist_km', u'Ref', u'RefComposite', u'RhoHV',
+       u'Zdr', u'Kdp', u'MarshallPalmer', u'Katsumata', u'Brandes',
+       u'Sachidanazrnic', u'RyzhkovZrnic', u'minutes_pastXminutes_past',
+       u'minutes_pastXradardist_km', u'minutes_pastXRef',
+       u'minutes_pastXRefComposite', u'minutes_pastXRhoHV',
+       u'minutes_pastXZdr', u'minutes_pastXKdp',
+       u'minutes_pastXMarshallPalmer', u'minutes_pastXKatsumata',
+       u'minutes_pastXBrandes', u'minutes_pastXSachidanazrnic',
+       u'minutes_pastXRyzhkovZrnic', u'radardist_kmXradardist_km',
+       u'radardist_kmXRef', u'radardist_kmXRefComposite',
+       u'radardist_kmXRhoHV', u'radardist_kmXZdr', u'radardist_kmXKdp',
+       u'radardist_kmXMarshallPalmer', u'radardist_kmXKatsumata',
+       u'radardist_kmXBrandes', u'radardist_kmXSachidanazrnic',
+       u'radardist_kmXRyzhkovZrnic', u'RefXRef', u'RefXRefComposite',
+       u'RefXRhoHV', u'RefXZdr', u'RefXKdp', u'RefXMarshallPalmer',
+       u'RefXKatsumata', u'RefXBrandes', u'RefXSachidanazrnic',
+       u'RefXRyzhkovZrnic', u'RefCompositeXRefComposite',
+       u'RefCompositeXRhoHV', u'RefCompositeXZdr', u'RefCompositeXKdp',
+       u'RefCompositeXMarshallPalmer', u'RefCompositeXKatsumata',
+       u'RefCompositeXBrandes', u'RefCompositeXSachidanazrnic',
+       u'RefCompositeXRyzhkovZrnic', u'RhoHVXRhoHV', u'RhoHVXZdr',
+       u'RhoHVXKdp', u'RhoHVXMarshallPalmer', u'RhoHVXKatsumata',
+       u'RhoHVXBrandes', u'RhoHVXSachidanazrnic', u'RhoHVXRyzhkovZrnic',
+       u'ZdrXZdr', u'ZdrXKdp', u'ZdrXMarshallPalmer', u'ZdrXKatsumata',
+       u'ZdrXBrandes', u'ZdrXSachidanazrnic', u'ZdrXRyzhkovZrnic', u'KdpXKdp',
+       u'KdpXMarshallPalmer', u'KdpXKatsumata', u'KdpXBrandes',
+       u'KdpXSachidanazrnic', u'KdpXRyzhkovZrnic',
+       u'MarshallPalmerXMarshallPalmer', u'MarshallPalmerXKatsumata',
+       u'MarshallPalmerXBrandes', u'MarshallPalmerXSachidanazrnic',
+       u'MarshallPalmerXRyzhkovZrnic', u'KatsumataXKatsumata',
+       u'KatsumataXBrandes', u'KatsumataXSachidanazrnic',
+       u'KatsumataXRyzhkovZrnic', u'BrandesXBrandes',
+       u'BrandesXSachidanazrnic', u'BrandesXRyzhkovZrnic',
+       u'SachidanazrnicXSachidanazrnic', u'SachidanazrnicXRyzhkovZrnic',
+       u'RyzhkovZrnicXRyzhkovZrnic'],
+      dtype='object')
+2015-12-06 16:13:50,191 coef: [ -1.80170211e+01   2.99571977e+01  -1.79096093e+00  -1.46727850e+00
+  -4.50262605e+02  -2.22298335e+01   3.54560695e+01  -1.00243533e+01
+   3.95119141e+00  -9.70795884e-04  -7.97696734e-01  -1.18549117e-02
+   1.71141605e-01   1.75128087e-02   3.98405460e-02   4.49807227e-02
+   6.17393516e+00   2.32598608e-01  -2.37103580e+00  -1.62877773e-01
+   5.68816689e-02   3.72510899e-05   5.17437837e-02   4.33564317e-04
+  -7.35447389e-03   1.92426043e-01  -2.73964687e-01  -2.75307455e+01
+   1.15358059e+00  -1.38953055e+00   1.31210998e-01  -6.71266723e-02
+  -1.89465428e-05   3.05826654e-02   6.54300483e-05  -1.40084074e-01
+   1.20286637e-01   2.93706221e+00  -4.97918829e-01   6.50809316e-01
+   3.39655456e-01  -1.56056786e-01  -3.35179193e-05  -2.97001504e-02
+   3.00854617e-06  -1.26654571e-02  -1.34541956e+00  -3.69034219e-01
+   4.79408331e-02   2.90158333e-01  -1.71398564e-01   3.48257068e-05
+   1.66326407e-03   1.49525019e-05   1.67982283e+02   3.05115550e+01
+   2.52721754e+01   1.17651170e+00   1.56572144e+00  -5.63956350e-04
+  -2.31349203e-01  -1.69170018e-03   6.33457393e-01   2.99184280e+00
+   4.75863314e-01  -2.79899388e-02   1.57449073e-04  -6.96786979e-02
+  -1.35707184e-04   2.53054814e+00  -5.32488416e-01   1.12713628e-02
+   3.31900993e-04  -1.63517392e-01  -3.63059309e-05   2.58458626e-02
+  -3.86176846e-02  -2.12735232e-04   5.69794482e-02  -7.78737537e-04
+   1.45912720e-02   1.28341296e-04  -1.90391680e-02   4.77967978e-04
+   4.16042684e-10  -1.24875588e-05   1.34935773e-08   2.16187134e-03
+   2.94621412e-06  -1.27265921e-09]
+2015-12-06 16:13:51,177 Prediction done
+2015-12-06 16:13:51,177 Gzipping...
+2015-12-06 16:13:52,633 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151206_aggmean_lasso_manyfeature.csv.gz

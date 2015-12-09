@@ -1,0 +1,9 @@
+2015-12-07 03:26:03,433 started
+2015-12-07 03:26:07,419 reading done
+2015-12-07 03:26:07,454 preprocessing done
+2015-12-07 03:26:07,454 start modeling
+2015-12-07 03:26:28,198 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-07 03:26:28,199 coef: [ -1.59729147e-02   6.82728249e-02   1.40367676e+00  -7.06768976e-01
+   6.84285381e-06  -4.12065200e-04  -1.75398050e-06]
+2015-12-07 03:26:29,188 Prediction done
+2015-12-07 03:26:30,209 Prediction done

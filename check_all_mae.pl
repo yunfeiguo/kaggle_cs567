@@ -3,7 +3,7 @@
 for $i(@ARGV) {
     open IN,'<',$i or die "open($i):$!\n";
     while(<IN>){
-	if (/]: \d+/) {
+	if (/: \d+/) {
 	push @all,"$i,$_";
     }
     }

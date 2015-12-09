@@ -1,0 +1,10 @@
+2015-12-06 23:37:36,085 started
+2015-12-06 23:37:38,223 reading done
+2015-12-06 23:37:38,619 start regression modeling
+2015-12-06 23:37:38,620 try alpha = 0.1
+Traceback (most recent call last):
+  File "./20151206_submission_mixtureregression.py", line 135, in <module>
+    runModel(alpha,[])
+  File "./20151206_submission_mixtureregression.py", line 103, in runModel
+    cur_error_percent=float(sum(abs(predictor2['predict_class_exp'].values - classout2.values)))*100.0/float(predictor2.shape[0])
+MemoryError

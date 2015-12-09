@@ -4,3 +4,31 @@ trymanyfeature.py: error: argument -f is required
 2015-12-05 19:30:10,671 started
 usage: trymanyfeature.py [-h] -f F [F ...]
 trymanyfeature.py: error: argument -f is required
+2015-12-06 09:17:32,103 started
+2015-12-06 09:17:33,544 reading done
+2015-12-06 09:17:34,841 try feature Index([u'minutes_past', u'radardist_km', u'Ref', u'RefComposite', u'RhoHV',
+       u'Zdr', u'Kdp', u'Expected', u'MarshallPalmer', u'Katsumata',
+       ...
+       u'RyzhkovZrnicXRefComposite', u'RyzhkovZrnicXRhoHV',
+       u'RyzhkovZrnicXZdr', u'RyzhkovZrnicXKdp', u'RyzhkovZrnicXExpected',
+       u'RyzhkovZrnicXMarshallPalmer', u'RyzhkovZrnicXKatsumata',
+       u'RyzhkovZrnicXBrandes', u'RyzhkovZrnicXSachidanazrnic',
+       u'RyzhkovZrnicXRyzhkovZrnic'],
+      dtype='object', length=182)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:444: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+4494.38user 7685.83system 8:54.04elapsed 2280%CPU (0avgtext+0avgdata 34919600maxresident)k
+233632inputs+72outputs (2major+154781minor)pagefaults 0swaps
+2015-12-06 09:26:51,784 started
+2015-12-06 09:26:53,185 reading done
+2015-12-06 09:26:54,471 try feature Index([u'minutes_past', u'radardist_km', u'Ref', u'RefComposite', u'RhoHV',
+       u'Zdr', u'Kdp', u'Expected', u'MarshallPalmer', u'Katsumata',
+       ...
+       u'RyzhkovZrnicXRefComposite', u'RyzhkovZrnicXRhoHV',
+       u'RyzhkovZrnicXZdr', u'RyzhkovZrnicXKdp', u'RyzhkovZrnicXExpected',
+       u'RyzhkovZrnicXMarshallPalmer', u'RyzhkovZrnicXKatsumata',
+       u'RyzhkovZrnicXBrandes', u'RyzhkovZrnicXSachidanazrnic',
+       u'RyzhkovZrnicXRyzhkovZrnic'],
+      dtype='object', length=182)
+35090.09user 84737.50system 1:30:38elapsed 2203%CPU (0avgtext+0avgdata 34910448maxresident)k
+0inputs+48outputs (1major+158577minor)pagefaults 0swaps

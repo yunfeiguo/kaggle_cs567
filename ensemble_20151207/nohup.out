@@ -1,0 +1,76 @@
+2015-12-07 13:23:38,548 started
+2015-12-07 13:23:44,180 reading done
+Traceback (most recent call last):
+  File "./20151207_submission_ensemble.py", line 38, in <module>
+    cutoff = float(args.f[0])
+AttributeError: 'Namespace' object has no attribute 'f'
+2015-12-07 13:27:32,608 started
+2015-12-07 13:27:37,287 reading done
+2015-12-07 13:27:37,287 try feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'mixregPred', 'RF_pred', 'xgbPred']
+2015-12-07 13:27:37,342 start modeling
+2015-12-07 13:30:13,992 features: ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'mixregPred', 'RF_pred', 'xgbPred']
+2015-12-07 13:30:13,993 coef: [ -3.15547155e-02  -2.12235657e-02  -4.99424982e-01   3.38783316e-01
+  -5.17130443e-03   2.95553399e-02   1.74389270e-01   1.15296291e+00
+   9.70513768e-04]
+2015-12-07 13:30:14,690 Prediction done
+2015-12-07 13:30:14,691 Gzipping...
+2015-12-07 13:30:15,809 Output written to /home/yunfeiguo/projects/kaggle_cs567/data/20151207_ensemble_submission_9model.csv.gz
+2015-12-07 16:36:07,386 started
+2015-12-07 16:36:12,730 reading done
+2015-12-07 16:36:12,730 try feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred']
+2015-12-07 16:36:12,780 start modeling
+2015-12-07 16:36:13,261 features: ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred']
+2015-12-07 16:36:13,262 coef: [-0.          0.         -0.06397049  0.10295738  0.00218728  0.
+  1.14094663]
+2015-12-07 16:36:14,058 Prediction done
+2015-12-07 16:36:14,058 Gzipping...
+2015-12-07 16:36:15,227 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151207_ensemble_submission_9model_nomix_noxgb_a0.01.csv.gz
+2015-12-07 16:37:11,189 started
+2015-12-07 16:37:16,528 reading done
+2015-12-07 16:37:16,528 try feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']
+2015-12-07 16:37:16,579 start modeling
+2015-12-07 16:37:17,140 features: ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']
+2015-12-07 16:37:17,140 coef: [ -0.00000000e+00   0.00000000e+00  -6.33739417e-02   1.01801027e-01
+   2.18417470e-03   0.00000000e+00   1.13994206e+00   9.87960708e-04]
+2015-12-07 16:37:17,995 Prediction done
+2015-12-07 16:37:17,995 Gzipping...
+2015-12-07 16:37:19,159 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151207_ensemble_submission_9model_nomix_a0.01.csv.gz
+2015-12-07 16:39:10,802 started
+2015-12-07 16:39:16,111 reading done
+2015-12-07 16:39:16,111 try feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']
+2015-12-07 16:39:16,162 start modeling
+2015-12-07 16:39:16,341 features: ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred', 'xgbPred']
+2015-12-07 16:39:16,342 coef: [  0.00000000e+00   0.00000000e+00  -0.00000000e+00   0.00000000e+00
+   2.86100912e-03   0.00000000e+00   1.11323690e+00   9.90889004e-04]
+2015-12-07 16:39:17,163 Prediction done
+2015-12-07 16:39:17,163 Gzipping...
+2015-12-07 16:39:18,337 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151207_ensemble_submission_9model_nomix_a0.1.csv.gz
+2015-12-07 16:44:27,901 started
+2015-12-07 16:44:33,214 reading done
+2015-12-07 16:44:33,214 try feature ['linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred']
+2015-12-07 16:44:33,264 start modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:466: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-07 16:47:00,898 features: ['linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred']
+2015-12-07 16:47:00,898 coef: [-0.02654897  0.99097514 -1.30343167  0.00474765  0.41174406]
+2015-12-07 16:47:01,700 Prediction done
+2015-12-07 16:47:01,701 Gzipping...
+2015-12-07 16:47:02,920 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151207_ensemble_submission_nonon-param_a1e-4.csv.gz
+2015-12-07 16:55:29,046 started
+2015-12-07 16:55:34,470 reading done
+2015-12-07 16:55:34,470 try feature ['lassoPred', 'ElasticNetPred']
+2015-12-07 16:55:34,521 start modeling
+2015-12-07 16:55:34,679 features: ['lassoPred', 'ElasticNetPred']
+2015-12-07 16:55:34,679 coef: [ 1.71481019 -0.82570025]
+2015-12-07 16:55:35,453 Prediction done
+2015-12-07 16:55:35,453 Gzipping...
+2015-12-07 16:55:36,464 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151207_ensemble_submission_lassoEN_a1e-4.csv.gz
+2015-12-07 16:56:27,143 started
+2015-12-07 16:56:32,572 reading done
+2015-12-07 16:56:32,572 try feature ['lassoPred', 'xgbPred']
+2015-12-07 16:56:32,627 start modeling
+2015-12-07 16:56:32,677 features: ['lassoPred', 'xgbPred']
+2015-12-07 16:56:32,678 coef: [ 1.23978014  0.0025267 ]
+2015-12-07 16:56:33,476 Prediction done
+2015-12-07 16:56:33,476 Gzipping...
+2015-12-07 16:56:34,540 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151207_ensemble_submission_lassoXGB_a1e-4.csv.gz

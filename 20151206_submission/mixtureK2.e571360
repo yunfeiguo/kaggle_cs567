@@ -1,0 +1,14 @@
+2015-12-06 20:23:43,985 started
+2015-12-06 20:23:47,719 reading done
+2015-12-06 20:23:47,719 start classification
+2015-12-06 20:41:39,061 p 2 K2 mean error rate : 0.444211262679%
+2015-12-06 20:41:39,066 p 2 K2 mean class1 error rate: 23.7725688945%
+2015-12-06 20:41:39,067 start regression modeling
+2015-12-06 20:42:45,530 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic', 'ZdrXpredict_class_exp', 'radardist_kmXpredict_class_exp', 'MarshallPalmerXpredict_class_exp', 'KatsumataXpredict_class_exp', 'BrandesXpredict_class_exp', 'SachidanazrnicXpredict_class_exp', 'RyzhkovZrnicXpredict_class_exp', 'predict_class_exp']
+2015-12-06 20:42:45,531 coef: [  1.15039964e+00   3.27314634e-01   1.57472250e+00  -6.34534658e-01
+   1.45126953e-05  -2.23168983e-03  -1.34443183e-05   1.88509692e+02
+   4.65522441e+01  -2.17217093e+02   1.22920489e+02  -4.95698527e-02
+  -1.59869188e+00   1.81923696e-02   5.70264288e+02]
+2015-12-06 20:42:46,400 Prediction done
+2015-12-06 20:42:46,400 Gzipping...
+2015-12-06 20:42:47,510 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151206_mixture_knn_k2_p2_alpha1e-3.csv.gz

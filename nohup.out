@@ -575,3 +575,46 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 2015-12-05 18:25:29,514 Prediction done
 2015-12-05 18:25:29,515 Gzipping...
 2015-12-05 18:25:30,567 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151205_elasticnet_newfeature_1e-6.csv.gz
+2015-12-06 13:51:15,385 started
+2015-12-06 13:51:17,861 reading done
+Traceback (most recent call last):
+  File "./20151206_submission_manyfeature.py", line 42, in <module>
+    testData[newFeature] = testData[cols[i]]*testData[cols[j]]
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1914, in __getitem__
+    return self._getitem_column(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1921, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py", line 1090, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3102, in get
+    loc = self.items.get_loc(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/index.py", line 1692, in get_loc
+    return self._engine.get_loc(_values_from_object(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:3979)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3843)
+  File "pandas/hashtable.pyx", line 668, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12265)
+  File "pandas/hashtable.pyx", line 676, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12216)
+KeyError: 'MarshallPalmer'
+2015-12-07 04:32:06,616 started
+2015-12-07 04:32:09,620 reading done
+Traceback (most recent call last):
+  File "./genNewFeature.v3.py", line 36, in <module>
+    testData[newFeature] = testData[cols[i]]*testData[cols[j]]
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1914, in __getitem__
+    return self._getitem_column(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/frame.py", line 1921, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py", line 1090, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/internals.py", line 3102, in get
+    loc = self.items.get_loc(item)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/index.py", line 1692, in get_loc
+    return self._engine.get_loc(_values_from_object(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:3979)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3843)
+  File "pandas/hashtable.pyx", line 668, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12265)
+  File "pandas/hashtable.pyx", line 676, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12216)
+KeyError: 'Expected'
+2015-12-07 04:33:32,541 started
+2015-12-07 04:33:35,586 reading done
+2015-12-07 04:35:17,015 Output done

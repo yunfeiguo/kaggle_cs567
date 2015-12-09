@@ -110,12 +110,12 @@ def transform (df,hasExpected):
     #df = df.groupby(df.index).agg(np.sum)
     if hasExpected:
         df['Expected'] = Expected
-        df = df.join(MP)
+    df = df.join(MP)
     return(df)
 
-trainCleaned = transform(trainCleaned,True)
+#trainCleaned = transform(trainCleaned,True)
 testData = transform(testData,False)
 
-trainCleaned.to_csv(fn_out_train)
+#trainCleaned.to_csv(fn_out_train)
 testData.to_csv(fn_out_test)
 logging.warning('Output done')

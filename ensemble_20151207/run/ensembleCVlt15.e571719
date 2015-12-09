@@ -1,0 +1,5 @@
+2015-12-07 05:27:19,375 started
+2015-12-07 05:27:21,904 reading done
+2015-12-07 05:27:21,906 try feature ['lassoPred', 'ElasticNetPred', 'boost_pred', 'linearRidge_pred']
+2015-12-07 05:29:36,834 coef: [ 0.55326413 -0.09829377  0.94675492 -1.20578844]
+2015-12-07 05:29:36,834 average 50-fold MAE for alpha 0.0001 feature ['lassoPred', 'ElasticNetPred', 'boost_pred', 'linearRidge_pred']: 19.9149888613 

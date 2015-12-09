@@ -1,0 +1,5 @@
+2015-12-06 22:33:45,635 started
+2015-12-06 22:33:45,886 reading done
+2015-12-06 22:33:45,899 start regression modeling
+2015-12-06 22:33:45,900 try alpha = 0.1
+2015-12-06 22:40:47,460 aggByMean, average 10-fold MAE for K 3 p 4 alpha 0.1 feature ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic', 'ZdrXpredict_class_exp', 'radardist_kmXpredict_class_exp', 'MarshallPalmerXpredict_class_exp', 'KatsumataXpredict_class_exp', 'BrandesXpredict_class_exp', 'SachidanazrnicXpredict_class_exp', 'RyzhkovZrnicXpredict_class_exp', 'predict_class_exp']: 29.3317766083 

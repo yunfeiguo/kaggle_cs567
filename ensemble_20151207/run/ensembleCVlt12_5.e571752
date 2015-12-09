@@ -1,0 +1,17 @@
+2015-12-07 08:06:49,880 started
+Traceback (most recent call last):
+  File "/home/yunfeiguo/projects/kaggle_cs567/src/ensemble_20151207/ensemble_cv.py", line 33, in <module>
+    trainCleaned=pd.read_csv(fn_train,sep=',',index_col='Id')
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 491, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 268, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 583, in __init__
+    self._make_engine(self.engine)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 724, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/io/parsers.py", line 1093, in __init__
+    self._reader = _parser.TextReader(src, **kwds)
+  File "pandas/parser.pyx", line 350, in pandas.parser.TextReader.__cinit__ (pandas/parser.c:3253)
+  File "pandas/parser.pyx", line 588, in pandas.parser.TextReader._setup_parser_source (pandas/parser.c:6112)
+IOError: File aggmean_cleaned_train_boostRigdeLassoENRansacBayesMixregXgbRegRF.csv does not exist

@@ -1,0 +1,19 @@
+2015-12-08 11:58:36,284 started
+2015-12-08 11:59:20,284 reading done
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/generic.py:2748: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  self._update_inplace(new_data)
+./20151208_submission_lasso_newfeautre_expall.py:95: FutureWarning: sort(columns=....) is deprecated, use sort_values(by=.....)
+  hour = hour.sort('minutes_past', ascending=True)
+2015-12-08 12:40:19,354 preprocessing done
+2015-12-08 12:40:19,354 start modeling
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/linear_model/coordinate_descent.py:466: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations
+  ConvergenceWarning)
+2015-12-08 12:40:37,591 features: ['Zdr', 'radardist_km', 'MarshallPalmer', 'Katsumata', 'Brandes', 'Sachidanazrnic', 'RyzhkovZrnic']
+2015-12-08 12:40:37,592 coef: [  8.79404921e+00   1.95972559e+00  -5.61490536e+00   3.21669768e+00
+   4.32351758e-05  -1.87409162e-02  -2.85051594e-05]
+2015-12-08 12:40:38,567 Prediction done
+2015-12-08 12:40:38,567 Gzipping...
+2015-12-08 12:40:39,651 Output written to /home/yunfeiguo/projects/kaggle_cs567/results/20151208_lasso_newfeature_1e-6_expall.csv.gz

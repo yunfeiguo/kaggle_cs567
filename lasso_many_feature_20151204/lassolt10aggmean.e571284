@@ -1,0 +1,31 @@
+2015-12-05 23:07:23,462 started
+2015-12-05 23:07:29,112 reading done
+2015-12-05 23:07:43,772 try feature Index([u'minutes_past', u'radardist_km', u'Ref', u'Ref_5x5_10th',
+       u'Ref_5x5_50th', u'Ref_5x5_90th', u'RefComposite',
+       u'RefComposite_5x5_10th', u'RefComposite_5x5_50th',
+       u'RefComposite_5x5_90th',
+       ...
+       u'RyzhkovZrnicXKdp', u'RyzhkovZrnicXKdp_5x5_10th',
+       u'RyzhkovZrnicXKdp_5x5_50th', u'RyzhkovZrnicXKdp_5x5_90th',
+       u'RyzhkovZrnicXExpected', u'RyzhkovZrnicXMarshallPalmer',
+       u'RyzhkovZrnicXKatsumata', u'RyzhkovZrnicXBrandes',
+       u'RyzhkovZrnicXSachidanazrnic', u'RyzhkovZrnicXRyzhkovZrnic'],
+      dtype='object', length=812)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py:449: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/sklearn/utils/validation.py:449: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Traceback (most recent call last):
+  File "./trymanyfeature.py", line 78, in <module>
+    runModel(float(i),j,featureCombo)
+  File "./trymanyfeature.py", line 45, in runModel
+    predictor = trainCleaned.iloc[ktrain,np.in1d(trainCleaned.columns,featureCombo)]
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/indexing.py", line 1196, in __getitem__
+    return self._getitem_tuple(key)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/indexing.py", line 1436, in _getitem_tuple
+    retval = getattr(retval, self.name)._getitem_axis(key, axis=axis)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/indexing.py", line 1467, in _getitem_axis
+    return self._getbool_axis(key, axis=axis)
+  File "/home/yunfeiguo/Downloads/python_install/lib/python2.7/site-packages/pandas/core/indexing.py", line 1210, in _getbool_axis
+    raise self._exception(detail)
+IndexError

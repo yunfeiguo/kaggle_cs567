@@ -1,0 +1,4 @@
+/opt/gridengine/default/spool/compute-0-29/job_scripts/571297: line 2: import: command not found
+/opt/gridengine/default/spool/compute-0-29/job_scripts/571297: line 3: import: command not found
+/opt/gridengine/default/spool/compute-0-29/job_scripts/571297: line 4: syntax error near unexpected token `"/home/yunfeiguo/projects/kaggle_cs567/src"'
+/opt/gridengine/default/spool/compute-0-29/job_scripts/571297: line 4: `sys.path.append("/home/yunfeiguo/projects/kaggle_cs567/src")'

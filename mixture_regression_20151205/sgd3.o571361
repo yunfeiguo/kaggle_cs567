@@ -1,0 +1,12 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+losshinge mean error rate 50-fold CV: 42.9490128444%
+losshinge mean class1 error rate 50-fold CV: 44.0370605005%
+losslog mean error rate 50-fold CV: 43.8377979935%
+losslog mean class1 error rate 50-fold CV: 43.3322774786%
+lossmodified_huber mean error rate 50-fold CV: 44.0950048693%
+lossmodified_huber mean class1 error rate 50-fold CV: 48.5904339563%
+losssquared_hinge mean error rate 50-fold CV: 45.1404865213%
+losssquared_hinge mean class1 error rate 50-fold CV: 47.545137789%
+lossperceptron mean error rate 50-fold CV: 44.8617331469%
+lossperceptron mean class1 error rate 50-fold CV: 48.2815964523%

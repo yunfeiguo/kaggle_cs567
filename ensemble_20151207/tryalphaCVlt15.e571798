@@ -1,0 +1,11 @@
+2015-12-07 16:39:04,629 started
+2015-12-07 16:39:08,269 reading done
+2015-12-07 16:39:08,272 try feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred']
+2015-12-07 16:39:49,250 coef: [ 0.          0.         -0.          0.          0.00296849  0.
+  1.11369722]
+2015-12-07 16:39:49,251 average 50-fold MAE for alpha 0.1 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred']: 18.8837697816 
+2015-12-07 16:40:28,166 coef: [ 0.          0.          0.          0.          0.00798344  0.
+  0.91028588]
+2015-12-07 16:40:28,166 average 50-fold MAE for alpha 1.0 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred']: 19.0228164384 
+2015-12-07 16:41:04,546 coef: [ 0.  0.  0.  0.  0.  0.  0.]
+2015-12-07 16:41:04,546 average 50-fold MAE for alpha 10.0 feature ['boost_pred', 'linearRidge_pred', 'lassoPred', 'ElasticNetPred', 'ransac_pred', 'Bay_pred', 'RF_pred']: 20.312593841 
